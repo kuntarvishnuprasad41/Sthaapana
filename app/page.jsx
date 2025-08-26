@@ -138,7 +138,7 @@ export default function HomePage() {
                 alt="Luxury living room"
                 width={800}
                 height={600}
-                className="rounded-lg shadow-2xl"
+                className="  shadow-2xl"
               />
             </div>
           </AnimatedContainer>
@@ -193,7 +193,7 @@ export default function HomePage() {
                 alt="Shopping experience"
                 width={800}
                 height={600}
-                className="rounded-lg shadow-2xl"
+                className=" shadow-2xl"
               />
             </div>
           </AnimatedContainer>
