@@ -3,5 +3,13 @@ export function Logo({ className = "" }) {
     <div className={`flex items-center ${className}`}>
       <img src="/logo.svg" alt="Riyash Logo" className="h-12 w-auto" />
     </div>
-  )
+  );
+}
+
+export function LogoB({ className = "" }) {
+  return (
+    <div className={`flex items-center ${className}`}>
+      <img src="/logo-b.svg" alt="Riyash Logo" className="h-12 w-auto" />
+    </div>
+  );
 }
