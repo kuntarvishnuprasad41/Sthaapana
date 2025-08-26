@@ -112,7 +112,7 @@ export default function HomePage() {
       </Section>
 
       {/* Lifestyle Section */}
-      <Section className="">
+      {/* <Section className="">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedContainer animation="slide-up">
             <div>
@@ -139,6 +139,46 @@ export default function HomePage() {
                 width={800}
                 height={800}
                 className="  shadow-2xl"
+              />
+            </div>
+          </AnimatedContainer>
+        </div>
+      </Section> */}
+
+      <Section className="!px-0 !m-0 min-h-screen">
+        {" "}
+        <div className="flex flex-col lg:flex-row justify-end items-stretch w-full">
+          <AnimatedContainer
+            animation="slide-up"
+            className="flex-1 flex items-center"
+          >
+            <div className="w-full px-6">
+              <Heading level={2} className="mb-0 font-serif font-medium">
+                {t("home.lifestyle.title")}
+              </Heading>
+              <Heading
+                level={2}
+                gradient
+                className="mb-0 font-serif font-medium"
+              >
+                {t("home.lifestyle.subtitle")}
+              </Heading>
+              <Text className="text-gray-300 leading-relaxed">
+                {t("home.lifestyle.description")}
+              </Text>
+            </div>
+          </AnimatedContainer>
+
+          <AnimatedContainer
+            animation="fade-in"
+            delay={200}
+            className="flex-1 relative"
+          >
+            <div className="h-full w-full flex justify-end">
+              <img
+                src="/images/hero2.png"
+                alt="Luxury living room"
+                className="h-full w-auto object-cover shadow-2xl"
               />
             </div>
           </AnimatedContainer>
