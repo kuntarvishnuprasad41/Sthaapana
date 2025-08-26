@@ -1,0 +1,188 @@
+{
+  "nav": {
+    "aboutUs": "About Us",
+    "riyashExperience": "Riyash Experience",
+    "ourProjects": "Our Projects",
+    "contactUs": "Contact Us"
+  },
+  "home": {
+    "hero": {
+      "title": "Luxury furniture, crafted",
+      "subtitle": "for every lifestyle",
+      "description": "From bespoke ready-made collections to bespoke creations, Riyash brings together comfort, style and quality into every home and project.",
+      "cta": "Explore Our Collections"
+    },
+    "lifestyle": {
+      "title": "More than furniture.",
+      "subtitle": "A lifestyle upgrade.",
+      "description": "At Riyash, we believe that furniture should tell a story. Whether you're looking for a statement piece that defines your space, or a complete collection that transforms your home, we're here to help you create spaces that inspire."
+    },
+    "rooms": {
+      "title": "Furniture for every room,",
+      "subtitle": "every story",
+      "description": "From the living room where families gather to the bedroom where dreams unfold, our collections are crafted to elevate every moment while maintaining our standards of comfort and quality.",
+      "categories": {
+        "livingRoom": "Living Room",
+        "bedroom": "Bedroom",
+        "dining": "Dining",
+        "office": "Office & Workspaces",
+        "kitchen": "Kitchen",
+        "hospitality": "Hospitality"
+      }
+    },
+    "shopping": {
+      "title": "Shopping",
+      "subtitle": "reimagined",
+      "description": "Buying furniture with Riyash is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
+    },
+    "features": {
+      "visualize": {
+        "title": "Visualize before you decide",
+        "description": "Step into fully styled room concepts, letting your instinct feel every detail and see how it fits in your home."
+      },
+      "guided": {
+        "title": "Guided by experts",
+        "description": "Our design team walks you through curated spaces, offering insights that make choosing the right furniture easier and more fun."
+      },
+      "custom": {
+        "title": "Curated & custom options",
+        "description": "From ready-made collections to bespoke designs, explore solutions that match your style, space, and lifestyle with complete confidence."
+      }
+    },
+    "projects": {
+      "title": "Featured",
+      "subtitle": "projects",
+      "description": "Our work speaks for itself. From luxury hotels to educational institutions and government projects, Riyash has left its mark on spaces across the region with our commitment to quality."
+    },
+    "cta": {
+      "title": "LET'S DESIGN YOUR",
+      "subtitle": "NEXT SPACE TOGETHER",
+      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "button": "Request a Consultation"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Crafting furniture that",
+      "subtitle": "inspires everyday living",
+      "description": "Riyash creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style that defines every lifestyle."
+    },
+    "story": {
+      "title": "Our story",
+      "description": "Blending craftsmanship and creativity to craft timeless, meaningful furniture."
+    },
+    "mission": {
+      "title": "Our mission",
+      "description": "Making luxury design accessible through quality, innovation, and personalized service."
+    },
+    "vision": {
+      "title": "Our vision",
+      "description": "Shaping future lifestyles by setting trends, not simply following them."
+    },
+    "beginning": {
+      "title": "The beginning",
+      "subtitle": "of Riyash",
+      "description": "Furniture should inspire design, not just occupy space. Riyash was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward across homes and projects."
+    },
+    "drives": {
+      "title": "What drives us",
+      "subtitle": "forward",
+      "description": "We believe luxury should be within reach. Every Riyash piece—ready-made or custom—is built to the highest standards, delivering elegance, comfort, and an inspiring shopping journey."
+    },
+    "headed": {
+      "title": "Where we're",
+      "subtitle": "headed",
+      "description": "Our goal is bold: to be among the top five furniture brands in the region by building design trends and shaping extraordinary living experiences."
+    },
+    "values": {
+      "title": "Our",
+      "subtitle": "values",
+      "quality": {
+        "title": "Quality first",
+        "description": "Every Riyash piece is crafted with uncompromising standards of excellence, ensuring timeless beauty, refined details, and exceptional performance across every collection we create."
+      },
+      "customer": {
+        "title": "Customer first",
+        "description": "We place people at the heart of every decision, designing solutions that reflect unique lifestyles, individual needs, and personalized experiences our customers truly deserve."
+      },
+      "creativity": {
+        "title": "Creativity",
+        "description": "Innovation drives us forward embracing evolving trends, and artistic craftsmanship to consistently deliver fresh, inspiring furniture that transforms spaces into meaningful living experiences."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Our foundation is built on integrity, transparency, and reliability, fostering long-term partnerships with clients and communities who value our consistency, honesty, and commitment."
+      }
+    }
+  },
+  "projects": {
+    "hero": {
+      "title": "Trusted to transform",
+      "subtitle": "spaces across the region",
+      "description": "From luxury hotels to universities, hospitals, and iconic developments, Riyash delivers furniture solutions that combine elegance, durability, and design excellence."
+    },
+    "items": {
+      "bananHotelSuites": "Banan Hotel Suites",
+      "majmaahUniversity": "Majmaah University",
+      "ananHotel": "Anan Hotel",
+      "fituriPalaceHotel": "Fituri Palace Hotel",
+      "gulfHealthCouncil": "Gulf Health Council",
+      "gloriaInnHotel": "Gloria Inn Hotel",
+      "alakhdudHotel": "Alakhdud Hotel",
+      "ashadHotelSuites": "Ashad Hotel Suites",
+      "azharAlnakhil": "Azhar Alnakhil",
+      "najranMunicipality": "Najran Municipality",
+      "hudulAlatfal": "Hudul Alatfal",
+      "alHayahTower": "Al Hayah Tower"
+    },
+    "locations": {
+      "tabuk": "Tabuk",
+      "riyadh": "Riyadh",
+      "najran": "Najran",
+      "jeddah": "Jeddah"
+    }
+  },
+  "experience": {
+    "hero": {
+      "title": "Shopping reimagined",
+      "subtitle": "The Riyash experience",
+      "description": "Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
+    },
+    "gallery": {
+      "title": "A gallery,",
+      "subtitle": "not a store",
+      "description": "Riyash showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
+    },
+    "experience": {
+      "title": "EXPERIENCE RIYASH",
+      "subtitle": "FOR YOURSELF",
+      "description": "Visit our showroom to see, feel, and experience the difference. Book a personalized tour with our team today.",
+      "cta": "Visit Our Stores"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's create your",
+      "subtitle": "space together",
+      "description": "Whether you're furnishing a single room, a new home, or an entire project, our team is here to guide you."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email address",
+      "emailPlaceholder": "Enter your email address",
+      "location": "Location",
+      "locationPlaceholder": "Enter your location",
+      "contact": "Contact",
+      "contactPlaceholder": "Enter your contact number",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Submit",
+      "consent": "By pressing the submit button, I agree to Riyash contacting me by email. I also understand that any information I've shared in this form is subject to Riyash privacy policy."
+    }
+  },
+  "footer": {
+    "privacy": "Privacy policy",
+    "rights": "© Riyash 2025. All Rights Reserved"
+  }
+}
