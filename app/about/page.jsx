@@ -82,7 +82,7 @@ export default function AboutPage() {
 
       {/* Company Info Section */}
 
-      <div className="flex w-screen  flex-row justify-between  text-black bg-[url('/bg.svg')] bg-cover bg-center">
+      <div className="flex w-screen flex-col items-center lg:items-start  lg:flex-row lg:justify-between  text-black bg-[url('/bg.svg')] bg-cover bg-center">
         <div>
           {" "}
           <Section className="">
