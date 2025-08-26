@@ -131,7 +131,7 @@ export default function ProjectsPage() {
       </Section>
 
       {/* Projects Grid Section */}
-      <Section className="bg-gray-900">
+      <Section className="bg-black">
         {/* Category Filter */}
         <AnimatedContainer animation="fade-in">
           <div className="flex flex-wrap justify-center gap-4 mb-16">

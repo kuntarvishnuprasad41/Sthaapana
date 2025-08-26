@@ -211,7 +211,7 @@ export default function AboutPage() {
       </div>
 
       {/* Values Section */}
-      <Section className="bg-gray-900">
+      <Section className="bg-black">
         <SectionHeader title="Our" subtitle="values" className="mb-16" />
         <div className="grid md:grid-cols-2 gap-8">
           {values.map((value, index) => (

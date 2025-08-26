@@ -112,7 +112,7 @@ export default function HomePage() {
       </Section>
 
       {/* Lifestyle Section */}
-      <Section className="bg-gray-900">
+      <Section className="">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedContainer animation="slide-up">
             <div>
@@ -184,7 +184,7 @@ export default function HomePage() {
       </div>
 
       {/* Shopping Experience Section */}
-      <Section className="bg-gray-900">
+      <Section className="bg-black">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedContainer animation="fade-in">
             <div className="relative">

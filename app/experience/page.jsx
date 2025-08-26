@@ -91,7 +91,7 @@ export default function ExperiencePage() {
       </Section>
 
       {/* Gallery Not Store Section */}
-      <Section className="bg-gray-900   bg-[url('/images/exp-2.png')] h-[600px]">
+      <Section className="bg-black   bg-[url('/images/exp-2.png')] h-[600px]">
         <div className="flex text-center  items-center">
           <AnimatedContainer animation="slide-up">
             <div>
@@ -176,7 +176,7 @@ export default function ExperiencePage() {
       </Section> */}
 
       {/* Process Section */}
-      {/* <Section className="bg-gray-900">
+      {/* <Section className="bg-black">
         <div className="text-center mb-16">
           <AnimatedContainer animation="slide-up">
             <Heading level={2} className="mb-4">

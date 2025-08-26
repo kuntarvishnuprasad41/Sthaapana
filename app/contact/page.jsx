@@ -108,7 +108,7 @@ export default function ContactPage() {
       </Section>
 
       {/* Contact Form Section */}
-      <Section className="bg-gray-900">
+      <Section className="bg-black">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <AnimatedContainer animation="slide-up">
