@@ -290,7 +290,7 @@ export default function HomePage() {
       <ProjectsCarouselSection featuredProjects={featuredProjects} t={t} />
 
       {/* Final CTA Section */}
-      <Section className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center">
+      <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
           <Heading level={1} gradient className="mb-4 font-serif">
             {t("home.cta.title")}
