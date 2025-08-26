@@ -83,8 +83,8 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-[url('/luxury-furniture-showroom-dark-elegant.png')] bg-cover bg-center opacity-30" />
+      <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/hero.png')] bg-cover">
+        <div className="absolute inset-0  bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <Heading level={1} className="mb-0 font-serif font-medium">
@@ -132,12 +132,12 @@ export default function HomePage() {
             </div>
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={200}>
-            <div className="relative">
+            <div className="relative flex justify-end ">
               <Image
-                src="/luxury-living-room-with-teal-sofa-and-elegant-deco.png"
+                src="/images/hero2.png"
                 alt="Luxury living room"
                 width={800}
-                height={600}
+                height={800}
                 className="  shadow-2xl"
               />
             </div>
