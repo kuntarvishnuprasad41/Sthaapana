@@ -241,8 +241,8 @@ export default function ExperiencePage() {
       </Section> */}
 
       {/* Visit Us Section */}
-      <Section>
-        <div className="text-center mb-16">
+      {/* <Section> */}
+      {/* <div className="text-center mb-16">
           <AnimatedContainer animation="slide-up">
             <Heading level={1} gradient className="mb-0 font-sans font-normal">
               EXPERIENCE RIYASH
@@ -255,9 +255,9 @@ export default function ExperiencePage() {
               Book a personalized tour with our team today.
             </Text>
           </AnimatedContainer>
-        </div>
+        </div> */}
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+      {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
           {visitInfo.map((info, index) => (
             <AnimatedContainer
               key={info.title}
@@ -278,9 +278,9 @@ export default function ExperiencePage() {
               </div>
             </AnimatedContainer>
           ))}
-        </div>
+        </div> */}
 
-        <AnimatedContainer animation="fade-in" delay={600}>
+      {/* <AnimatedContainer animation="fade-in" delay={600}>
           <div className="text-center">
             <Button
               size="lg"
@@ -290,8 +290,8 @@ export default function ExperiencePage() {
               Visit Our Stores
             </Button>
           </div>
-        </AnimatedContainer>
-      </Section>
+        </AnimatedContainer> */}
+      {/* </Section> */}
 
       {/* Final CTA Section */}
       <Section className="  bg-[url('/bg.svg')] bg-cover text-center">
