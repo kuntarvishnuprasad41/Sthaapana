@@ -212,7 +212,7 @@ export default function ProjectsPage() {
         </AnimatedContainer>
 
         {/* Load More Button */}
-        <AnimatedContainer animation="fade-in" delay={800}>
+        {/* <AnimatedContainer animation="fade-in" delay={800}>
           <div className="text-center mt-16">
             <Button
               variant="outline"
@@ -223,11 +223,11 @@ export default function ProjectsPage() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-        </AnimatedContainer>
+        </AnimatedContainer> */}
       </Section>
 
       {/* Stats Section */}
-      <Section>
+      {/* <Section>
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <AnimatedContainer animation="slide-up" delay={100}>
             <div>
@@ -262,7 +262,7 @@ export default function ProjectsPage() {
             </div>
           </AnimatedContainer>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Final CTA Section */}
       <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
