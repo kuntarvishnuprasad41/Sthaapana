@@ -116,7 +116,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in">
                 <div className="relative">
                   <Image
-                    src="/modern-furniture-design-process-craftsmanship.png"
+                    src="/images/modern.png"
                     alt="Furniture craftsmanship"
                     width={800}
                     height={600}
@@ -165,7 +165,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in" delay={200}>
                 <div className="relative">
                   <Image
-                    src="/luxury-chairs-elegant-furniture-showroom.png"
+                    src="/images/lifestyle.png"
                     alt="Luxury furniture showroom"
                     width={800}
                     height={600}
@@ -182,7 +182,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in">
                 <div className="relative">
                   <Image
-                    src="/spotlight-luxury-chair-dramatic-lighting.png"
+                    src="/images/headed.png"
                     alt="Future vision"
                     width={800}
                     height={600}

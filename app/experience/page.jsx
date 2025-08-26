@@ -1,15 +1,24 @@
-import Image from "next/image"
-import { Button } from "../../components/ui/button"
-import { Section } from "../../components/ui/section"
-import { Heading, Text } from "../../components/ui/typography"
-import { AnimatedContainer } from "../../components/ui/animated-container"
-import { ArrowRight, MapPin, Clock, Users, Palette, Eye, Heart } from "lucide-react"
+import Image from "next/image";
+import { Button } from "../../components/ui/button";
+import { Section } from "../../components/ui/section";
+import { Heading, Text } from "../../components/ui/typography";
+import { AnimatedContainer } from "../../components/ui/animated-container";
+import {
+  ArrowRight,
+  MapPin,
+  Clock,
+  Users,
+  Palette,
+  Eye,
+  Heart,
+} from "lucide-react";
 
 const experienceFeatures = [
   {
     icon: Eye,
     title: "Immersive Showrooms",
-    description: "Walk through complete room concepts designed to inspire and help you visualize your perfect space.",
+    description:
+      "Walk through complete room concepts designed to inspire and help you visualize your perfect space.",
   },
   {
     icon: Users,
@@ -20,32 +29,37 @@ const experienceFeatures = [
   {
     icon: Palette,
     title: "Custom Solutions",
-    description: "From ready-made collections to bespoke pieces, we create solutions tailored to your unique style.",
+    description:
+      "From ready-made collections to bespoke pieces, we create solutions tailored to your unique style.",
   },
   {
     icon: Heart,
     title: "Confidence in Choice",
-    description: "Experience furniture in context, making decisions with complete confidence and joy.",
+    description:
+      "Experience furniture in context, making decisions with complete confidence and joy.",
   },
-]
+];
 
 const visitInfo = [
   {
     icon: MapPin,
     title: "Multiple Locations",
-    description: "Visit our showrooms across the region to experience the Riyash difference firsthand.",
+    description:
+      "Visit our showrooms across the region to experience the Riyash difference firsthand.",
   },
   {
     icon: Clock,
     title: "Flexible Scheduling",
-    description: "Book personalized tours at your convenience with our dedicated design team.",
+    description:
+      "Book personalized tours at your convenience with our dedicated design team.",
   },
   {
     icon: Users,
     title: "Expert Guidance",
-    description: "Our design consultants are here to help you create spaces that truly reflect your lifestyle.",
+    description:
+      "Our design consultants are here to help you create spaces that truly reflect your lifestyle.",
   },
-]
+];
 
 export default function ExperiencePage() {
   return (
@@ -55,7 +69,9 @@ export default function ExperiencePage() {
         <div className="absolute inset-0 bg-[url('/luxury-chair-spotlight-dramatic-showroom.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            <p className="text-yellow-400 font-semibold text-lg mb-4">Riyash Experience</p>
+            <p className="text-yellow-400 font-semibold text-lg mb-4">
+              Riyash Experience
+            </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-6">
@@ -67,8 +83,8 @@ export default function ExperiencePage() {
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
-              Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and
-              personalized design.
+              Discover how furniture shopping transforms into an inspiring
+              journey of creativity, confidence, and personalized design.
             </Text>
           </AnimatedContainer>
         </div>
@@ -86,27 +102,32 @@ export default function ExperiencePage() {
                 not a store
               </Heading>
               <Text className="text-gray-300 leading-relaxed mb-8">
-                Riyash showrooms are curated like galleries, not stores. Each room is styled as a complete concept,
-                allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality.
-                Instead of imagining pieces in isolation, you experience how they come together in harmony.
+                Riyash showrooms are curated like galleries, not stores. Each
+                room is styled as a complete concept, allowing you to see
+                furniture in its natural setting—living, dining, bedroom,
+                office, or hospitality. Instead of imagining pieces in
+                isolation, you experience how they come together in harmony.
               </Text>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-3"></div>
                   <Text className="text-gray-300">
-                    Complete room concepts that showcase furniture in realistic, lived-in environments
+                    Complete room concepts that showcase furniture in realistic,
+                    lived-in environments
                   </Text>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-3"></div>
                   <Text className="text-gray-300">
-                    Curated spaces that demonstrate how different pieces work together harmoniously
+                    Curated spaces that demonstrate how different pieces work
+                    together harmoniously
                   </Text>
                 </div>
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-3"></div>
                   <Text className="text-gray-300">
-                    Inspiration-driven layouts that help you envision your own perfect space
+                    Inspiration-driven layouts that help you envision your own
+                    perfect space
                   </Text>
                 </div>
               </div>
@@ -115,7 +136,7 @@ export default function ExperiencePage() {
           <AnimatedContainer animation="fade-in" delay={200}>
             <div className="relative">
               <Image
-                src="/luxury-showroom-gallery-style-furniture-display.png"
+                src="/images/modern.png"
                 alt="Gallery-style showroom"
                 width={800}
                 height={600}
@@ -130,15 +151,24 @@ export default function ExperiencePage() {
       <Section>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {experienceFeatures.map((feature, index) => (
-            <AnimatedContainer key={feature.title} animation="scale-in" delay={index * 100}>
+            <AnimatedContainer
+              key={feature.title}
+              animation="scale-in"
+              delay={index * 100}
+            >
               <div className="text-center group">
                 <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400/20 transition-colors">
                   <feature.icon className="h-8 w-8 text-yellow-400" />
                 </div>
-                <Heading level={4} className="mb-4 group-hover:text-yellow-400 transition-colors">
+                <Heading
+                  level={4}
+                  className="mb-4 group-hover:text-yellow-400 transition-colors"
+                >
                   {feature.title}
                 </Heading>
-                <Text className="text-gray-300 leading-relaxed">{feature.description}</Text>
+                <Text className="text-gray-300 leading-relaxed">
+                  {feature.description}
+                </Text>
               </div>
             </AnimatedContainer>
           ))}
@@ -156,8 +186,8 @@ export default function ExperiencePage() {
               Riyash
             </Heading>
             <Text className="text-gray-300 max-w-2xl mx-auto">
-              From the moment you step into our showroom to the final delivery, every step is designed to exceed your
-              expectations.
+              From the moment you step into our showroom to the final delivery,
+              every step is designed to exceed your expectations.
             </Text>
           </AnimatedContainer>
         </div>
@@ -172,7 +202,8 @@ export default function ExperiencePage() {
                 Discover & Explore
               </Heading>
               <Text className="text-gray-300">
-                Walk through our gallery-style showrooms and discover furniture in beautifully curated room settings.
+                Walk through our gallery-style showrooms and discover furniture
+                in beautifully curated room settings.
               </Text>
             </div>
           </AnimatedContainer>
@@ -186,7 +217,8 @@ export default function ExperiencePage() {
                 Consult & Customize
               </Heading>
               <Text className="text-gray-300">
-                Work with our design experts to select pieces that perfectly match your space, style, and lifestyle.
+                Work with our design experts to select pieces that perfectly
+                match your space, style, and lifestyle.
               </Text>
             </div>
           </AnimatedContainer>
@@ -200,7 +232,8 @@ export default function ExperiencePage() {
                 Create & Deliver
               </Heading>
               <Text className="text-gray-300">
-                Watch your vision come to life as we craft and deliver furniture that transforms your space.
+                Watch your vision come to life as we craft and deliver furniture
+                that transforms your space.
               </Text>
             </div>
           </AnimatedContainer>
@@ -218,20 +251,27 @@ export default function ExperiencePage() {
               FOR YOURSELF
             </Heading>
             <Text size="lg" className="mb-12 max-w-2xl mx-auto">
-              Visit our showroom to see, feel, and experience the difference. Book a personalized tour with our team
-              today.
+              Visit our showroom to see, feel, and experience the difference.
+              Book a personalized tour with our team today.
             </Text>
           </AnimatedContainer>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {visitInfo.map((info, index) => (
-            <AnimatedContainer key={info.title} animation="scale-in" delay={index * 100}>
+            <AnimatedContainer
+              key={info.title}
+              animation="scale-in"
+              delay={index * 100}
+            >
               <div className="bg-black/50 border border-gray-700 rounded-lg p-8 text-center hover:border-yellow-400/50 transition-all duration-300 group">
                 <div className="w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400/20 transition-colors">
                   <info.icon className="h-6 w-6 text-yellow-400" />
                 </div>
-                <Heading level={4} className="mb-4 group-hover:text-yellow-400 transition-colors">
+                <Heading
+                  level={4}
+                  className="mb-4 group-hover:text-yellow-400 transition-colors"
+                >
                   {info.title}
                 </Heading>
                 <Text className="text-gray-300">{info.description}</Text>
@@ -242,7 +282,10 @@ export default function ExperiencePage() {
 
         <AnimatedContainer animation="fade-in" delay={600}>
           <div className="text-center">
-            <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold">
+            <Button
+              size="lg"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+            >
               <ArrowRight className="mr-2 h-5 w-5" />
               Visit Our Stores
             </Button>
@@ -260,15 +303,18 @@ export default function ExperiencePage() {
             NEXT SPACE TOGETHER
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
-            Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and
-            deliver.
+            Whether you're furnishing a single room or a full-scale project,
+            Riyash is here to guide, create, and deliver.
           </Text>
-          <Button size="lg" className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold">
+          <Button
+            size="lg"
+            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+          >
             <ArrowRight className="mr-2 h-5 w-5" />
             Request a Consultation
           </Button>
         </AnimatedContainer>
       </Section>
     </div>
-  )
+  );
 }
