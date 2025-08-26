@@ -69,15 +69,15 @@ export default function ExperiencePage() {
         <div className="absolute inset-0 bg-[url('/images/experience.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            <p className="text-yellow-400 font-semibold text-lg mb-4">
+            <p className="text-yellow-400 font-normal text-lg mb-4">
               Riyash Experience
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-6">
+            <Heading level={1} className="mb-6 font-normal">
               Shopping reimagined
             </Heading>
-            <Heading level={1} gradient className="mb-8">
+            <Heading level={1} gradient className="mb-8 font-normal">
               The Riyash experience
             </Heading>
           </AnimatedContainer>
@@ -91,8 +91,8 @@ export default function ExperiencePage() {
       </Section>
 
       {/* Gallery Not Store Section */}
-      <Section className="bg-gray-900">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <Section className="bg-gray-900   bg-[url('/images/exp-2.png')] h-[600px]">
+        <div className="flex text-center  items-center">
           <AnimatedContainer animation="slide-up">
             <div>
               <Heading level={2} className="mb-4">
@@ -108,7 +108,7 @@ export default function ExperiencePage() {
                 office, or hospitality. Instead of imagining pieces in
                 isolation, you experience how they come together in harmony.
               </Text>
-              <div className="space-y-6">
+              {/* <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-3"></div>
                   <Text className="text-gray-300">
@@ -130,10 +130,10 @@ export default function ExperiencePage() {
                     perfect space
                   </Text>
                 </div>
-              </div>
+              </div> */}
             </div>
           </AnimatedContainer>
-          <AnimatedContainer animation="fade-in" delay={200}>
+          {/* <AnimatedContainer animation="fade-in" delay={200}>
             <div className="relative">
               <Image
                 src="/images/modern.png"
@@ -143,12 +143,12 @@ export default function ExperiencePage() {
                 className="rounded-lg shadow-2xl"
               />
             </div>
-          </AnimatedContainer>
+          </AnimatedContainer> */}
         </div>
       </Section>
 
       {/* Experience Features Section */}
-      <Section>
+      {/* <Section>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {experienceFeatures.map((feature, index) => (
             <AnimatedContainer
@@ -173,10 +173,10 @@ export default function ExperiencePage() {
             </AnimatedContainer>
           ))}
         </div>
-      </Section>
+      </Section> */}
 
       {/* Process Section */}
-      <Section className="bg-gray-900">
+      {/* <Section className="bg-gray-900">
         <div className="text-center mb-16">
           <AnimatedContainer animation="slide-up">
             <Heading level={2} className="mb-4">
@@ -238,13 +238,13 @@ export default function ExperiencePage() {
             </div>
           </AnimatedContainer>
         </div>
-      </Section>
+      </Section> */}
 
       {/* Visit Us Section */}
       <Section>
         <div className="text-center mb-16">
           <AnimatedContainer animation="slide-up">
-            <Heading level={1} gradient className="mb-4">
+            <Heading level={1} gradient className="mb-4 font-sans font-normal">
               EXPERIENCE RIYASH
             </Heading>
             <Heading level={1} className="mb-8">
@@ -284,7 +284,7 @@ export default function ExperiencePage() {
           <div className="text-center">
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
             >
               <ArrowRight className="mr-2 h-5 w-5" />
               Visit Our Stores
@@ -294,7 +294,7 @@ export default function ExperiencePage() {
       </Section>
 
       {/* Final CTA Section */}
-      <Section className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center">
+      <Section className="  bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
           <Heading level={1} gradient className="mb-4">
             LET'S DESIGN YOUR
@@ -308,7 +308,7 @@ export default function ExperiencePage() {
           </Text>
           <Button
             size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
           >
             <ArrowRight className="mr-2 h-5 w-5" />
             Request a Consultation

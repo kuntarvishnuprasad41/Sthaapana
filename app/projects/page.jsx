@@ -104,8 +104,8 @@ export default function ProjectsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-[url('/luxury-hotel-interior-design-showcase.png')] bg-cover bg-center opacity-30" />
+      <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/projects.png')] bg-cover">
+        <div className="absolute inset-0 bg-[url('/images/project.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <p className="text-yellow-400 font-semibold text-lg mb-4">
@@ -265,7 +265,7 @@ export default function ProjectsPage() {
       </Section>
 
       {/* Final CTA Section */}
-      <Section className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center">
+      <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
           <Heading level={1} gradient className="mb-4">
             LET'S DESIGN YOUR
