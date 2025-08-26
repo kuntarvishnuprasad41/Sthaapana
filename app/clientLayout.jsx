@@ -43,6 +43,24 @@ const ivyOraDisplay = localFont({
   fallback: ["serif"],
 });
 
+const haskoy = localFont({
+  src: [
+    {
+      path: "../public/fonts/Haskoy-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Haskoy-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-haskoy",
+  display: "swap",
+  fallback: ["sans-serif"],
+});
+
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
@@ -55,7 +73,7 @@ export default function ClientLayout({ children }) {
     <html
       lang={lang}
       dir={dir}
-      className={`${ivyOraDisplay.variable} antialiased`}
+      className={`${ivyOraDisplay.variable} ${haskoy.variable} antialiased`}
     >
       <head>
         <title>Riyash - Luxury Furniture</title>
@@ -65,7 +83,7 @@ export default function ClientLayout({ children }) {
         />
         <meta name="generator" content="v0.app" />
       </head>
-      <body className="font-sans bg-black text-white">
+      <body className="font-haskoy bg-black text-white">
         <ThemeProvider defaultTheme="dark">
           <Header />
           <main className="pt-20">{children}</main>

@@ -95,10 +95,7 @@ export default function HomePage() {
             </Heading>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Text
-              size="lg"
-              className="mb-12 max-w-2xl mx-auto font-light font-serif"
-            >
+            <Text size="lg" className="mb-12 max-w-2xl mx-auto font-light  ">
               {t("home.hero.description")}
             </Text>
           </AnimatedContainer>
@@ -129,7 +126,7 @@ export default function HomePage() {
               >
                 {t("home.lifestyle.subtitle")}
               </Heading>
-              <Text className="text-gray-300 leading-relaxed font-serif">
+              <Text className="text-gray-300 leading-relaxed  ">
                 {t("home.lifestyle.description")}
               </Text>
             </div>
