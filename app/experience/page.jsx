@@ -66,7 +66,7 @@ export default function ExperiencePage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-[url('/luxury-chair-spotlight-dramatic-showroom.png')] bg-cover bg-center opacity-40" />
+        <div className="absolute inset-0 bg-[url('/images/experience.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <p className="text-yellow-400 font-semibold text-lg mb-4">

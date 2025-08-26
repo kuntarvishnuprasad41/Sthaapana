@@ -165,11 +165,19 @@ export default function ProjectsPage() {
               >
                 <div className="group relative overflow-hidden rounded-lg bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
                   <div className="aspect-[4/3] relative">
-                    <Image
+                    {/* <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    /> */}
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      onError={(e) =>
+                        (e.currentTarget.src = "/placeholder.svg")
+                      }
+                      className=" group-hover:scale-105 transition-transform duration-500 w-full h-full object-"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute top-4 right-4">
