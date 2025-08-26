@@ -102,7 +102,7 @@ export default function HomePage() {
           <AnimatedContainer animation="scale-in" delay={600}>
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold font-serif"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 tfont-normal font-serif"
             >
               {t("home.hero.cta")}
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -172,7 +172,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition-colors">
+                    <h3 className="text-xl font-normal text-white group-hover:text-yellow-400 transition-colors">
                       {category.name}
                     </h3>
                   </div>
@@ -220,7 +220,7 @@ export default function HomePage() {
                         <feature.icon className="h-6 w-6 text-yellow-400" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-white mb-2">
+                        <h4 className="tfont-normal text-white mb-2">
                           {feature.title}
                         </h4>
                         <p className="text-gray-400 leading-relaxed">
@@ -237,7 +237,7 @@ export default function HomePage() {
       </Section>
 
       {/* Featured Projects Section */}
-      <Section>
+      {/* <Section>
         <SectionHeader
           title={t("home.projects.title")}
           subtitle={t("home.projects.subtitle")}
@@ -262,7 +262,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-lg font-semibold text-white group-hover:text-yellow-400 transition-colors">
+                  <h3 className="tfont-normal text-white group-hover:text-yellow-400 transition-colors">
                     {project.name}
                   </h3>
                   <p className="text-sm text-gray-300">{project.location}</p>
@@ -285,7 +285,7 @@ export default function HomePage() {
             </Link>
           </div>
         </AnimatedContainer>
-      </Section>
+      </Section> */}
 
       <ProjectsCarouselSection featuredProjects={featuredProjects} t={t} />
 
@@ -304,7 +304,7 @@ export default function HomePage() {
           <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 tfont-normal"
             >
               <ArrowRight className="mr-2 h-5 w-5" />
               {t("home.cta.button")}

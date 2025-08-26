@@ -3,15 +3,30 @@ export function Section({ children, className = "", ...props }) {
     <section className={`py-16 md:py-24 ${className}`} {...props}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">{children}</div>
     </section>
-  )
+  );
 }
 
-export function SectionHeader({ title, subtitle, description, className = "" }) {
+export function SectionHeader({
+  title,
+  subtitle,
+  description,
+  className = "",
+}) {
   return (
     <div className={`mx-auto max-w-4xl text-center ${className}`}>
-      {subtitle && <p className="text-yellow-400 font-semibold text-lg mb-4 animate-fade-in font-serif">{subtitle}</p>}
-      <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up font-serif">{title}</h2>
-      {description && <p className="text-lg text-gray-300 leading-relaxed animate-fade-in">{description}</p>}
+      {subtitle && (
+        <p className="text-yellow-400 font-normal text-lg mb-4 animate-fade-in font-serif">
+          {subtitle}
+        </p>
+      )}
+      <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 animate-slide-up font-serif">
+        {title}
+      </h2>
+      {description && (
+        <p className="text-lg text-gray-300 leading-relaxed animate-fade-in">
+          {description}
+        </p>
+      )}
     </div>
-  )
+  );
 }
