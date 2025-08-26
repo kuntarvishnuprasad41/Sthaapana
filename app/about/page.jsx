@@ -54,7 +54,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/about.png')]">
+      <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/about.png')] bg-cover">
         <div className="absolute inset-0 bg-[url('/luxury-furniture-craftsmanship-workshop.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
@@ -63,10 +63,10 @@ export default function AboutPage() {
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-6">
+            <Heading level={1} className="mb-0">
               Crafting furniture that
             </Heading>
-            <Heading level={1} gradient className="mb-8">
+            <Heading level={1} gradient className="mb-0">
               inspires everyday living
             </Heading>
           </AnimatedContainer>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                   delay={index * 100}
                 >
                   <div className="text-center">
-                    <Heading level={5} className="mb-4">
+                    <Heading level={5} className="mb-0">
                       {info.title}
                     </Heading>
                     <Text
@@ -120,16 +120,16 @@ export default function AboutPage() {
                     alt="Furniture craftsmanship"
                     width={800}
                     height={600}
-                    className="rounded-lg shadow-2xl"
+                    className="shadow-2xl"
                   />
                 </div>
               </AnimatedContainer>
               <AnimatedContainer animation="slide-up" delay={200}>
                 <div>
-                  <Heading level={2} className="mb-4">
+                  <Heading level={2} className="mb-0">
                     The beginning
                   </Heading>
-                  <Heading level={2} gradient className="mb-8">
+                  <Heading level={2} gradient className="mb-0">
                     of Riyash
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
@@ -148,10 +148,10 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedContainer animation="slide-up">
                 <div>
-                  <Heading level={2} className="mb-4">
+                  <Heading level={2} className="mb-0">
                     What drives us
                   </Heading>
-                  <Heading level={2} gradient className="mb-8">
+                  <Heading level={2} gradient className="mb-0">
                     forward
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
@@ -169,7 +169,7 @@ export default function AboutPage() {
                     alt="Luxury furniture showroom"
                     width={800}
                     height={600}
-                    className="rounded-lg shadow-2xl"
+                    className=" shadow-2xl"
                   />
                 </div>
               </AnimatedContainer>
@@ -186,16 +186,16 @@ export default function AboutPage() {
                     alt="Future vision"
                     width={800}
                     height={600}
-                    className="rounded-lg shadow-2xl"
+                    className=" shadow-2xl"
                   />
                 </div>
               </AnimatedContainer>
               <AnimatedContainer animation="slide-up" delay={200}>
                 <div>
-                  <Heading level={2} className="mb-4">
+                  <Heading level={2} className="mb-0">
                     Where we're
                   </Heading>
-                  <Heading level={2} gradient className="mb-8">
+                  <Heading level={2} gradient className="mb-0">
                     headed
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
@@ -247,10 +247,10 @@ export default function AboutPage() {
       <div className="bg-[url('/bg.svg')] bg-cover bg-center ">
         <Section className="bg-[url('/bg.svg')] bg-cover bg-center text-center">
           <AnimatedContainer animation="slide-up">
-            <Heading level={1} gradient className="mb-4">
+            <Heading level={1} gradient className="mb-0">
               LET'S DESIGN YOUR
             </Heading>
-            <Heading level={1} className="mb-8">
+            <Heading level={1} className="mb-0">
               NEXT SPACE TOGETHER
             </Heading>
             <Text size="lg" className="mb-12 max-w-2xl mx-auto">

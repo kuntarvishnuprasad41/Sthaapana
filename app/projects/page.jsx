@@ -113,10 +113,10 @@ export default function ProjectsPage() {
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-6">
+            <Heading level={1} className="mb-0">
               Trusted to transform
             </Heading>
-            <Heading level={1} gradient className="mb-8">
+            <Heading level={1} gradient className="mb-0">
               spaces across the region
             </Heading>
           </AnimatedContainer>
@@ -231,7 +231,7 @@ export default function ProjectsPage() {
         <div className="grid md:grid-cols-4 gap-8 text-center">
           <AnimatedContainer animation="slide-up" delay={100}>
             <div>
-              <Heading level={2} gradient className="mb-2">
+              <Heading level={2} gradient className="mb-0">
                 150+
               </Heading>
               <Text className="text-gray-400">Projects Completed</Text>
@@ -239,7 +239,7 @@ export default function ProjectsPage() {
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={200}>
             <div>
-              <Heading level={2} gradient className="mb-2">
+              <Heading level={2} gradient className="mb-0">
                 50+
               </Heading>
               <Text className="text-gray-400">Happy Clients</Text>
@@ -247,7 +247,7 @@ export default function ProjectsPage() {
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={300}>
             <div>
-              <Heading level={2} gradient className="mb-2">
+              <Heading level={2} gradient className="mb-0">
                 12
               </Heading>
               <Text className="text-gray-400">Cities Served</Text>
@@ -255,7 +255,7 @@ export default function ProjectsPage() {
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <div>
-              <Heading level={2} gradient className="mb-2">
+              <Heading level={2} gradient className="mb-0">
                 8+
               </Heading>
               <Text className="text-gray-400">Years Experience</Text>
@@ -267,10 +267,10 @@ export default function ProjectsPage() {
       {/* Final CTA Section */}
       <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
-          <Heading level={1} gradient className="mb-4">
+          <Heading level={1} gradient className="mb-0">
             LET'S DESIGN YOUR
           </Heading>
-          <Heading level={1} className="mb-8">
+          <Heading level={1} className="mb-0">
             NEXT SPACE TOGETHER
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">

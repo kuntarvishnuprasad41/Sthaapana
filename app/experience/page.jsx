@@ -74,10 +74,10 @@ export default function ExperiencePage() {
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-6 font-normal">
+            <Heading level={1} className="mb-0 font-normal">
               Shopping reimagined
             </Heading>
-            <Heading level={1} gradient className="mb-8 font-normal">
+            <Heading level={1} gradient className="mb-0 font-normal">
               The Riyash experience
             </Heading>
           </AnimatedContainer>
@@ -95,10 +95,10 @@ export default function ExperiencePage() {
         <div className="flex text-center  items-center">
           <AnimatedContainer animation="slide-up">
             <div>
-              <Heading level={2} className="mb-4">
+              <Heading level={2} className="mb-0">
                 A gallery,
               </Heading>
-              <Heading level={2} gradient className="mb-8">
+              <Heading level={2} gradient className="mb-0">
                 not a store
               </Heading>
               <Text className="text-gray-300 leading-relaxed mb-8">
@@ -244,10 +244,10 @@ export default function ExperiencePage() {
       <Section>
         <div className="text-center mb-16">
           <AnimatedContainer animation="slide-up">
-            <Heading level={1} gradient className="mb-4 font-sans font-normal">
+            <Heading level={1} gradient className="mb-0 font-sans font-normal">
               EXPERIENCE RIYASH
             </Heading>
-            <Heading level={1} className="mb-8">
+            <Heading level={1} className="mb-0">
               FOR YOURSELF
             </Heading>
             <Text size="lg" className="mb-12 max-w-2xl mx-auto">
@@ -296,10 +296,10 @@ export default function ExperiencePage() {
       {/* Final CTA Section */}
       <Section className="  bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
-          <Heading level={1} gradient className="mb-4">
+          <Heading level={1} gradient className="mb-0">
             LET'S DESIGN YOUR
           </Heading>
-          <Heading level={1} className="mb-8">
+          <Heading level={1} className="mb-0">
             NEXT SPACE TOGETHER
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">

@@ -86,15 +86,15 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[url('/elegant-black-leather-chairs-luxury-meeting.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            <p className="text-yellow-400 font-semibold text-lg mb-4">
+            <p className="text-yellow-400 font-normal text-lg mb-4">
               Contact us
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-6">
+            <Heading level={1} className="mb-0">
               Let's create your
             </Heading>
-            <Heading level={1} gradient className="mb-8">
+            <Heading level={1} gradient className="mb-0">
               space together
             </Heading>
           </AnimatedContainer>
@@ -113,7 +113,7 @@ export default function ContactPage() {
           {/* Contact Information */}
           <AnimatedContainer animation="slide-up">
             <div>
-              <Heading level={2} className="mb-8">
+              <Heading level={2} className="mb-0">
                 Get in touch
               </Heading>
               <div className="space-y-8">
@@ -128,7 +128,7 @@ export default function ContactPage() {
                         <info.icon className="h-6 w-6 text-yellow-400" />
                       </div>
                       <div>
-                        <h4 className="text-lg font-semibold text-white mb-2">
+                        <h4 className="text-lg font-normal text-white mb-2">
                           {info.title}
                         </h4>
                         <p className="text-gray-400 mb-2">{info.description}</p>
@@ -243,7 +243,7 @@ export default function ContactPage() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-yellow-400 text-black hover:bg-yellow-500 py-3 text-lg font-semibold disabled:opacity-50"
+                  className="w-full bg-yellow-400 text-black hover:bg-yellow-500 py-3 text-lg font-normal disabled:opacity-50"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}
                 </Button>
@@ -263,10 +263,10 @@ export default function ContactPage() {
       <Section>
         <AnimatedContainer animation="fade-in">
           <div className="text-center mb-12">
-            <Heading level={2} className="mb-4">
+            <Heading level={2} className="mb-0">
               Visit our
             </Heading>
-            <Heading level={2} gradient className="mb-8">
+            <Heading level={2} gradient className="mb-0">
               showrooms
             </Heading>
             <Text className="text-gray-300 max-w-2xl mx-auto">
@@ -290,10 +290,10 @@ export default function ContactPage() {
       {/* Final CTA Section */}
       <Section className="  text-center  bg-[url('/bg.svg')] bg-cover">
         <AnimatedContainer animation="slide-up">
-          <Heading level={1} gradient className="mb-4">
+          <Heading level={1} gradient className="mb-0">
             LET'S DESIGN YOUR
           </Heading>
-          <Heading level={1} className="mb-8">
+          <Heading level={1} className="mb-0">
             NEXT SPACE TOGETHER
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
@@ -302,7 +302,7 @@ export default function ContactPage() {
           </Text>
           <Button
             size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
           >
             <ArrowRight className="mr-2 h-5 w-5" />
             Request a Consultation

@@ -87,10 +87,10 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[url('/luxury-furniture-showroom-dark-elegant.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            <Heading level={1} className="mb-6 font-serif font-medium">
+            <Heading level={1} className="mb-0 font-serif font-medium">
               {t("home.hero.title")}
             </Heading>
-            <Heading level={1} gradient className="mb-8 font-serif font-medium">
+            <Heading level={1} gradient className="mb-0 font-serif font-medium">
               {t("home.hero.subtitle")}
             </Heading>
           </AnimatedContainer>
@@ -116,13 +116,13 @@ export default function HomePage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <AnimatedContainer animation="slide-up">
             <div>
-              <Heading level={2} className="mb-4 font-serif font-medium">
+              <Heading level={2} className="mb-0 font-serif font-medium">
                 {t("home.lifestyle.title")}
               </Heading>
               <Heading
                 level={2}
                 gradient
-                className="mb-8 font-serif font-medium"
+                className="mb-0 font-serif font-medium"
               >
                 {t("home.lifestyle.subtitle")}
               </Heading>
@@ -199,10 +199,10 @@ export default function HomePage() {
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={200}>
             <div>
-              <Heading level={2} className="mb-4 font-serif">
+              <Heading level={2} className="mb-0 font-serif">
                 {t("home.shopping.title")}
               </Heading>
-              <Heading level={2} gradient className="mb-8 font-serif">
+              <Heading level={2} gradient className="mb-0 font-serif">
                 {t("home.shopping.subtitle")}
               </Heading>
               <Text className="text-gray-300 mb-12 leading-relaxed">
@@ -292,10 +292,10 @@ export default function HomePage() {
       {/* Final CTA Section */}
       <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
-          <Heading level={1} gradient className="mb-4 font-serif">
+          <Heading level={1} gradient className="mb-0 font-serif">
             {t("home.cta.title")}
           </Heading>
-          <Heading level={1} className="mb-8 font-serif">
+          <Heading level={1} className="mb-0 font-serif">
             {t("home.cta.subtitle")}
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
