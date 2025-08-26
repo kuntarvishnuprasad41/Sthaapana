@@ -10,36 +10,6 @@ import { ArrowRight, MapPin } from "lucide-react";
 
 const projects = [
   {
-    name: "Banan Hotel Suites",
-    location: "Tabuk",
-    image: "/banan-hotel-suites-luxury-interior.png",
-    category: "Hospitality",
-  },
-  {
-    name: "Fituri Palace Hotel",
-    location: "Riyadh",
-    image: "/fituri-palace-hotel-elegant-lobby.png",
-    category: "Hospitality",
-  },
-  {
-    name: "Anan Hotel",
-    location: "Riyadh",
-    image: "/anan-hotel-modern-restaurant-design.png",
-    category: "Hospitality",
-  },
-  {
-    name: "Majmaah University",
-    location: "Riyadh",
-    image: "/majmaah-university-modern-corridor.png",
-    category: "Educational",
-  },
-  {
-    name: "Gulf Health Council",
-    location: "Riyadh",
-    image: "/gulf-health-council-office-interior.png",
-    category: "Corporate",
-  },
-  {
     name: "Gloria Inn Hotel",
     location: "Riyadh",
     image: "/luxury-hotel-interior.png",
@@ -79,6 +49,36 @@ const projects = [
     name: "Al Hayah Tower",
     location: "Riyadh",
     image: "/office-tower-interior.png",
+    category: "Corporate",
+  },
+  {
+    name: "Banan Hotel Suites",
+    location: "Tabuk",
+    image: "/banan-hotel-suites-luxury-interior.png",
+    category: "Hospitality",
+  },
+  {
+    name: "Fituri Palace Hotel",
+    location: "Riyadh",
+    image: "/fituri-palace-hotel-elegant-lobby.png",
+    category: "Hospitality",
+  },
+  {
+    name: "Anan Hotel",
+    location: "Riyadh",
+    image: "/anan-hotel-modern-restaurant-design.png",
+    category: "Hospitality",
+  },
+  {
+    name: "Majmaah University",
+    location: "Riyadh",
+    image: "/majmaah-university-modern-corridor.png",
+    category: "Educational",
+  },
+  {
+    name: "Gulf Health Council",
+    location: "Riyadh",
+    image: "/gulf-health-council-office-interior.png",
     category: "Corporate",
   },
 ];
@@ -181,18 +181,18 @@ export default function ProjectsPage() {
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute top-4 right-4">
-                      <span className="bg-yellow-400/90 text-black text-xs font-semibold px-2 py-1 rounded transform group-hover:scale-110 transition-transform duration-200">
+                      <span className="bg-yellow-400/90 text-black font-sans text-xs font-semibold px-2 py-1 rounded transform group-hover:scale-110 transition-transform duration-200">
                         {project.category}
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition-colors mb-2">
+                    <h2 className="text-xl  font-sans text-white group-hover:text-yellow-400 transition-colors mb-2">
                       {project.name}
-                    </h3>
+                    </h2>
                     <div className="flex items-center text-gray-400 group-hover:text-gray-300 transition-colors">
                       <MapPin className="h-4 w-4 mr-2 group-hover:text-yellow-400 transition-colors" />
-                      <span className="text-sm">{project.location}</span>
+                      <h2 className="text-sm font-sans">{project.location}</h2>
                     </div>
                   </div>
                 </div>
