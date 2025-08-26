@@ -163,7 +163,7 @@ export default function ProjectsPage() {
                 className="animate-in fade-in slide-in-from-bottom-4 duration-500"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="group relative overflow-hidden rounded-lg bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
+                <div className="group relative overflow-hidden   bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
                   <div className="aspect-[4/3] relative">
                     {/* <Image
                       src={project.image || "/placeholder.svg"}

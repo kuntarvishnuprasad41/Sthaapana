@@ -50,13 +50,6 @@ export default function ProjectsCarouselSection({
 
   return (
     <Section>
-      <SectionHeader
-        title={t("home.projects.title")}
-        subtitle={t("home.projects.subtitle")}
-        description={t("home.projects.description")}
-        className="mb-16"
-      />
-
       {/* Carousel */}
       <div className="relative" ref={ref}>
         <div className="overflow-hidden" ref={emblaRef}>
@@ -69,7 +62,7 @@ export default function ProjectsCarouselSection({
                   selectedIndex !== index && "blur-sm opacity-60 scale-95"
                 )}
               >
-                <div className="group relative overflow-hidden rounded-2xl bg-gray-800 hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg">
+                <div className="group relative overflow-hidden   bg-gray-800 hover:bg-gray-700 transition-all duration-300 cursor-pointer shadow-lg">
                   <div className="relative aspect-[16/10]">
                     <Image
                       src={project.image || "/placeholder.svg"}
