@@ -134,29 +134,26 @@
   },
   "projects": {
     "hero": {
-      "title": "Trusted to transform",
-      "subtitle": "spaces across the region",
+      "tagline": "Projects",
+      "heading1": "Trusted to transform",
+      "heading2": "spaces across the region",
       "description": "From luxury hotels to universities, hospitals, and iconic developments, Riyash delivers furniture solutions that combine elegance, durability, and design excellence."
     },
-    "items": {
-      "bananHotelSuites": "Banan Hotel Suites",
-      "majmaahUniversity": "Majmaah University",
-      "ananHotel": "Anan Hotel",
-      "fituriPalaceHotel": "Fituri Palace Hotel",
-      "gulfHealthCouncil": "Gulf Health Council",
-      "gloriaInnHotel": "Gloria Inn Hotel",
-      "alakhdudHotel": "Alakhdud Hotel",
-      "ashadHotelSuites": "Ashad Hotel Suites",
-      "azharAlnakhil": "Azhar Alnakhil",
-      "najranMunicipality": "Najran Municipality",
-      "hudulAlatfal": "Hudul Alatfal",
-      "alHayahTower": "Al Hayah Tower"
+    "categories": {
+      "All": "All",
+      "Hospitality": "Hospitality",
+      "Educational": "Educational",
+      "Corporate": "Corporate",
+      "Residential": "Residential",
+      "Government": "Government",
+      "Healthcare": "Healthcare"
     },
-    "locations": {
-      "tabuk": "Tabuk",
-      "riyadh": "Riyadh",
-      "najran": "Najran",
-      "jeddah": "Jeddah"
+    "showing": "Showing {{count}} of {{total}} projects{{category ? ' in ' + category : ''}}",
+    "cta": {
+      "heading1": "LET'S DESIGN YOUR",
+      "heading2": "NEXT SPACE TOGETHER",
+      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "button": "Request a Consultation"
     }
   },
   "experience": {

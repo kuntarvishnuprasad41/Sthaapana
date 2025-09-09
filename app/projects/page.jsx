@@ -7,6 +7,7 @@ import { Section } from "../../components/ui/section";
 import { Heading, Text } from "../../components/ui/typography";
 import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, MapPin } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 const projects = [
   {
@@ -94,6 +95,7 @@ const categories = [
 ];
 
 export default function ProjectsPage() {
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
@@ -109,22 +111,20 @@ export default function ProjectsPage() {
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <p className="text-yellow-400 font-semibold text-lg mb-4">
-              Projects
+              {t("projects.hero.tagline")}
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
-              Trusted to transform
+              {t("projects.hero.heading1")}
             </Heading>
             <Heading level={1} gradient className="mb-0">
-              spaces across the region
+              {t("projects.hero.heading2")}
             </Heading>
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
-              From luxury hotels to universities, hospitals, and iconic
-              developments, Riyash delivers furniture solutions that combine
-              elegance, durability, and design excellence.
+              {t("projects.hero.description")}
             </Text>
           </AnimatedContainer>
         </div>
@@ -132,7 +132,6 @@ export default function ProjectsPage() {
 
       {/* Projects Grid Section */}
       <Section className="bg-black">
-        {/* Category Filter */}
         <AnimatedContainer animation="fade-in">
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             {categories.map((category) => (
@@ -146,13 +145,12 @@ export default function ProjectsPage() {
                     : "border-gray-600 text-gray-300 hover:border-yellow-400 hover:text-yellow-400 bg-transparent transform hover:scale-105 transition-all duration-200"
                 }
               >
-                {category}
+                {t(`projects.categories.${category}`)}
               </Button>
             ))}
           </div>
         </AnimatedContainer>
 
-        {/* Projects Grid */}
         <div className="transition-all duration-500 ease-in-out">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredProjects.map((project, index) => (
@@ -163,31 +161,25 @@ export default function ProjectsPage() {
                 className="animate-in fade-in slide-in-from-bottom-4 duration-500"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
-                <div className="group relative overflow-hidden   bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
+                <div className="group relative overflow-hidden bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
                   <div className="aspect-[4/3] relative">
-                    {/* <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    /> */}
                     <img
                       src={project.image}
                       alt={project.name}
                       onError={(e) =>
                         (e.currentTarget.src = "/placeholder.svg")
                       }
-                      className=" group-hover:scale-105 transition-transform duration-500 w-full h-full object-"
+                      className="group-hover:scale-105 transition-transform duration-500 w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute top-4 right-4">
                       <span className="bg-yellow-400/90 text-black font-sans text-xs font-semibold px-2 py-1 rounded transform group-hover:scale-110 transition-transform duration-200">
-                        {project.category}
+                        {t(`projects.categories.${project.category}`)}
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
-                    <h2 className="text-xl  font-sans text-white group-hover:text-yellow-400 transition-colors mb-2">
+                    <h2 className="text-xl font-sans text-white group-hover:text-yellow-400 transition-colors mb-2">
                       {project.name}
                     </h2>
                     <div className="flex items-center text-gray-400 group-hover:text-gray-300 transition-colors">
@@ -201,88 +193,39 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* Project Count Display */}
         <AnimatedContainer animation="fade-in" delay={200}>
           <div className="text-center mt-8 mb-8">
             <Text className="text-gray-400">
-              Showing {filteredProjects.length} of {projects.length} projects
-              {activeFilter !== "All" && ` in ${activeFilter}`}
+              {t("projects.showing", {
+                count: filteredProjects.length,
+                total: projects.length,
+                category:
+                  activeFilter !== "All"
+                    ? t(`projects.categories.${activeFilter}`)
+                    : "",
+              })}
             </Text>
           </div>
         </AnimatedContainer>
-
-        {/* Load More Button */}
-        {/* <AnimatedContainer animation="fade-in" delay={800}>
-          <div className="text-center mt-16">
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent px-8 transform hover:scale-105 transition-all duration-200"
-            >
-              Load More Projects
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </AnimatedContainer> */}
       </Section>
 
-      {/* Stats Section */}
-      {/* <Section>
-        <div className="grid md:grid-cols-4 gap-8 text-center">
-          <AnimatedContainer animation="slide-up" delay={100}>
-            <div>
-              <Heading level={2} gradient className="mb-0">
-                150+
-              </Heading>
-              <Text className="text-gray-400">Projects Completed</Text>
-            </div>
-          </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={200}>
-            <div>
-              <Heading level={2} gradient className="mb-0">
-                50+
-              </Heading>
-              <Text className="text-gray-400">Happy Clients</Text>
-            </div>
-          </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={300}>
-            <div>
-              <Heading level={2} gradient className="mb-0">
-                12
-              </Heading>
-              <Text className="text-gray-400">Cities Served</Text>
-            </div>
-          </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={400}>
-            <div>
-              <Heading level={2} gradient className="mb-0">
-                8+
-              </Heading>
-              <Text className="text-gray-400">Years Experience</Text>
-            </div>
-          </AnimatedContainer>
-        </div>
-      </Section> */}
-
-      {/* Final CTA Section */}
       <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
         <AnimatedContainer animation="slide-up">
           <Heading level={1} gradient className="mb-0">
-            LET'S DESIGN YOUR
+            {t("projects.cta.heading1")}
           </Heading>
           <Heading level={1} className="mb-0">
-            NEXT SPACE TOGETHER
+            {t("projects.cta.heading2")}
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
-            Whether you're furnishing a single room or a full-scale project,
-            Riyash is here to guide, create, and deliver.
+            {t("projects.cta.description")}
           </Text>
           <Button
             size="lg"
             className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
           >
             <ArrowRight className="mr-2 h-5 w-5" />
-            Request a Consultation
+            {t("projects.cta.button")}
           </Button>
         </AnimatedContainer>
       </Section>
