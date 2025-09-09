@@ -9,6 +9,7 @@ import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, MapPin } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import Link from "next/link";
+import OnErrorImage from "@/components/OnErrorImage";
 
 const projects = [
   {
@@ -170,14 +171,15 @@ export default function ProjectsPage() {
               >
                 <div className="group relative overflow-hidden bg-black border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 cursor-pointer transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-yellow-400/10">
                   <div className="aspect-[4/3] relative">
-                    <img
+                    {/* <img
                       src={project.image}
                       alt={project.name}
                       onError={(e) =>
                         (e.currentTarget.src = "/placeholder.svg")
                       }
                       className="group-hover:scale-105 transition-transform duration-500 w-full h-full object-cover"
-                    />
+                    /> */}
+                    <OnErrorImage project={project} />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     <div className="absolute top-4 right-4">
                       <span className="bg-yellow-400/90 text-black font-sans text-xs font-semibold px-2 py-1 rounded transform group-hover:scale-110 transition-transform duration-200">
