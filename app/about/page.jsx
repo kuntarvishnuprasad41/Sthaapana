@@ -104,8 +104,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* Company Info Section */}
-
+      {/* 
       <div className="flex w-screen flex-col items-center lg:items-start  lg:flex-row lg:justify-between  text-black bg-[url('/bg.svg')] bg-cover bg-center">
         <div>
           {" "}
@@ -134,7 +133,7 @@ export default function AboutPage() {
           </Section>
         </div>
         <div>
-          {/* The Beginning Section */}
+        
           <Section>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedContainer animation="fade-in">
@@ -166,8 +165,7 @@ export default function AboutPage() {
               </AnimatedContainer>
             </div>
           </Section>
-
-          {/* What Drives Us Section */}
+ 
           <Section className="">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedContainer animation="slide-up">
@@ -200,7 +198,7 @@ export default function AboutPage() {
             </div>
           </Section>
 
-          {/* Where We're Headed Section */}
+          
           <Section>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedContainer animation="fade-in">
@@ -226,6 +224,129 @@ export default function AboutPage() {
                     Our goal is bold: to be among the top five furniture brands
                     in the region by building design trends and shaping
                     extraordinary living experiences.
+                  </Text>
+                </div>
+              </AnimatedContainer>
+            </div>
+          </Section>
+        </div>
+      </div> */}
+
+      <div className="flex w-screen flex-col items-center lg:items-start lg:flex-row lg:justify-between text-black bg-[url('/bg.svg')] bg-cover bg-center">
+        {/* Sticky Sidebar */}
+        <div className="w-full lg:w-1/5 px-4 py-6 lg:sticky lg:top-20 self-start h-fit">
+          <Section>
+            <div>
+              {companyInfo.map((info, index) => (
+                <AnimatedContainer
+                  key={info.title}
+                  animation="slide-up"
+                  delay={index * 100}
+                >
+                  <div className="text-center">
+                    <Heading level={5} className="mb-0">
+                      {info.title}
+                    </Heading>
+                    <Text
+                      className="text-gray-300 mb-10 w-60 text-sm"
+                      size="sm"
+                    >
+                      {info.description}
+                    </Text>
+                  </div>
+                </AnimatedContainer>
+              ))}
+            </div>
+          </Section>
+        </div>
+
+        {/* Main Content */}
+        <div className="w-full lg:w-3/4 px-4 md:px-6 py-12 space-y-24">
+          {/* The Beginning Section */}
+          <Section>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <AnimatedContainer animation="fade-in">
+                <div className="relative">
+                  <Image
+                    src="/images/modern.png"
+                    alt="Furniture craftsmanship"
+                    width={800}
+                    height={600}
+                    className="shadow-2xl"
+                  />
+                </div>
+              </AnimatedContainer>
+              <AnimatedContainer animation="slide-up" delay={200}>
+                <div>
+                  <Heading level={2} className="mb-0">
+                    The beginning
+                  </Heading>
+                  <Heading level={2} gradient className="mb-0">
+                    of Riyash
+                  </Heading>
+                  <Text className="text-gray-300 leading-relaxed">
+                    Furniture should inspire design, not just occupy space...
+                  </Text>
+                </div>
+              </AnimatedContainer>
+            </div>
+          </Section>
+
+          {/* What Drives Us Section */}
+          <Section>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <AnimatedContainer animation="slide-up">
+                <div>
+                  <Heading level={2} className="mb-0">
+                    What drives us
+                  </Heading>
+                  <Heading level={2} gradient className="mb-0">
+                    forward
+                  </Heading>
+                  <Text className="text-gray-300 leading-relaxed">
+                    We believe luxury should be within reach...
+                  </Text>
+                </div>
+              </AnimatedContainer>
+              <AnimatedContainer animation="fade-in" delay={200}>
+                <div className="relative">
+                  <Image
+                    src="/images/lifestyle.png"
+                    alt="Luxury furniture showroom"
+                    width={800}
+                    height={600}
+                    className="shadow-2xl"
+                  />
+                </div>
+              </AnimatedContainer>
+            </div>
+          </Section>
+
+          {/* Where We're Headed Section */}
+          <Section>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <AnimatedContainer animation="fade-in">
+                <div className="relative">
+                  <Image
+                    src="/images/headed.png"
+                    alt="Future vision"
+                    width={800}
+                    height={600}
+                    className="shadow-2xl"
+                  />
+                </div>
+              </AnimatedContainer>
+              <AnimatedContainer animation="slide-up" delay={200}>
+                <div>
+                  <Heading level={2} className="mb-0">
+                    Where we're
+                  </Heading>
+                  <Heading level={2} gradient className="mb-0">
+                    headed
+                  </Heading>
+                  <Text className="text-gray-300 leading-relaxed">
+                    Our goal is bold: to be among the top five furniture
+                    brands...
                   </Text>
                 </div>
               </AnimatedContainer>
