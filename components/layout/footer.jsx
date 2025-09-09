@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo, LogoB } from "../ui/logo";
-import { Linkedin, Instagram, Facebook, Twitter } from "lucide-react";
+import { Linkedin, Instagram, Facebook } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6"; // X.com logo
 
 const navigation = [
   { name: "About Us", href: "/about" },
@@ -13,7 +14,7 @@ const socialLinks = [
   { name: "LinkedIn", href: "#", icon: Linkedin },
   { name: "Instagram", href: "#", icon: Instagram },
   { name: "Facebook", href: "#", icon: Facebook },
-  { name: "Twitter", href: "#", icon: Twitter },
+  { name: "Twitter", href: "#", icon: FaXTwitter },
 ];
 
 export function Footer() {
