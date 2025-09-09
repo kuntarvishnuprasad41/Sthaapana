@@ -192,21 +192,6 @@ export default function ProjectsPage() {
             ))}
           </div>
         </div>
-
-        <AnimatedContainer animation="fade-in" delay={200}>
-          <div className="text-center mt-8 mb-8">
-            <Text className="text-gray-400">
-              {t("projects.showing", {
-                count: filteredProjects.length,
-                total: projects.length,
-                category:
-                  activeFilter !== "All"
-                    ? t(`projects.categories.${activeFilter}`)
-                    : "",
-              })}
-            </Text>
-          </div>
-        </AnimatedContainer>
       </Section>
 
       <Section className=" bg-[url('/bg.svg')] bg-cover text-center">
