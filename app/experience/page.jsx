@@ -16,6 +16,7 @@ import {
   Heart,
 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import Link from "next/link";
 
 const experienceFeatures = (t) => [
   {
@@ -59,7 +60,7 @@ const visitInfo = (t) => [
 ];
 
 export default function ExperiencePage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="min-h-screen">
@@ -147,13 +148,15 @@ export default function ExperiencePage() {
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
             {t("experience.cta.description")}
           </Text>
-          <Button
-            size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
-          >
-            <ArrowRight className="mr-2 h-5 w-5" />
-            {t("experience.cta.button")}
-          </Button>
+          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+            <Button
+              size="lg"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
+            >
+              <ArrowRight className="mr-2 h-5 w-5" />
+              {t("experience.cta.button")}
+            </Button>
+          </Link>
         </AnimatedContainer>
       </Section>
     </div>

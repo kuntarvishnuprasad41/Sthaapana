@@ -9,6 +9,7 @@ import { ArrowRight, Eye, Users, Palette } from "lucide-react";
 import { useTranslation } from "../lib/i18n";
 import ProjectsCarouselSection from "@/components/FeaturedProjects";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   const { t, locale } = useTranslation();
@@ -420,7 +421,7 @@ export default function HomePage() {
   //     </Section>
   //   </div>
   // );
-
+  const router = useRouter();
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -451,13 +452,16 @@ export default function HomePage() {
           <Text size="lg" className="mb-12 max-w-2xl mx-auto font-light">
             {t("home.hero.description")}
           </Text>
-          <Button
-            size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal font-serif"
-          >
-            {t("home.hero.cta")}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+            <Button
+              size="lg"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal font-serif"
+              // onClick={() => router.push("/projects")}
+            >
+              {t("home.hero.cta")}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </Section>
 

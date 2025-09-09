@@ -8,6 +8,7 @@ import { Heading, Text } from "../../components/ui/typography";
 import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, MapPin } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import Link from "next/link";
 
 const projects = [
   {
@@ -95,7 +96,7 @@ const categories = [
 ];
 
 export default function ProjectsPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filteredProjects =
@@ -205,13 +206,15 @@ export default function ProjectsPage() {
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
             {t("projects.cta.description")}
           </Text>
-          <Button
-            size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
-          >
-            <ArrowRight className="mr-2 h-5 w-5" />
-            {t("projects.cta.button")}
-          </Button>
+          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+            <Button
+              size="lg"
+              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+            >
+              <ArrowRight className="mr-2 h-5 w-5" />
+              {t("projects.cta.button")}
+            </Button>
+          </Link>
         </AnimatedContainer>
       </Section>
     </div>
