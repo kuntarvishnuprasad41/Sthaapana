@@ -207,6 +207,66 @@
       "button": "Request a Consultation"
     }
   },
+  "contact": {
+    "hero": {
+      "subtitle": "Contact us",
+      "title1": "Let's create your",
+      "title2": "space together",
+      "description": "Whether you're furnishing a single room, a new home, or an entire project, our team is here to guide you."
+    },
+    "visit": {
+      "title": "Visit Our Showrooms",
+      "description": "Experience our furniture collections in person across multiple locations in the region.",
+      "details": "Riyadh • Jeddah • Tabuk • Najran"
+    },
+    "call": {
+      "title": "Call Us",
+      "description": "Speak directly with our design consultants for personalized assistance.",
+      "details": "+966 11 234 5678"
+    },
+    "email": {
+      "title": "Email Us",
+      "description": "Send us your inquiries and we'll respond within 24 hours.",
+      "details": "hello@riyash.com"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "description": "We're here to help you create your perfect space.",
+      "details": "Sun-Thu: 9AM-9PM • Fri-Sat: 2PM-10PM"
+    },
+    "info": {
+      "title": "Get in touch"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email address",
+      "emailPlaceholder": "Enter your email address",
+      "location": "Location",
+      "locationPlaceholder": "Enter your location",
+      "contact": "Contact",
+      "contactPlaceholder": "Enter your contact number",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "privacy": "By pressing the submit button, I agree to Riyash contacting me by email. I also understand that any information I've shared in this form is subject to Riyash privacy policy.",
+      "success": "Thank you for your message! We'll get back to you soon."
+    },
+    "map": {
+      "title1": "Visit our",
+      "title2": "showrooms",
+      "description": "Experience our furniture collections in person at our showrooms across the region. Each location offers the full Riyash gallery experience.",
+      "comingSoon": "Interactive map coming soon",
+      "locations": "Visit our showrooms in Riyadh, Jeddah, Tabuk, and Najran"
+    },
+    "cta": {
+      "title1": "LET'S DESIGN YOUR",
+      "title2": "NEXT SPACE TOGETHER",
+      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "button": "Request a Consultation"
+    }
+  },
   "footer": {
     "privacy": "Privacy policy",
     "rights": "© Riyash 2025. All Rights Reserved"

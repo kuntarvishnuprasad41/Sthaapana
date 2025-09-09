@@ -8,37 +8,38 @@ import { Section } from "../../components/ui/section";
 import { Heading, Text } from "../../components/ui/typography";
 import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
-
-const contactInfo = [
-  {
-    icon: MapPin,
-    title: "Visit Our Showrooms",
-    description:
-      "Experience our furniture collections in person across multiple locations in the region.",
-    details: "Riyadh • Jeddah • Tabuk • Najran",
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    description:
-      "Speak directly with our design consultants for personalized assistance.",
-    details: "+966 11 234 5678",
-  },
-  {
-    icon: Mail,
-    title: "Email Us",
-    description: "Send us your inquiries and we'll respond within 24 hours.",
-    details: "hello@riyash.com",
-  },
-  {
-    icon: Clock,
-    title: "Business Hours",
-    description: "We're here to help you create your perfect space.",
-    details: "Sun-Thu: 9AM-9PM • Fri-Sat: 2PM-10PM",
-  },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
+
+  const contactInfo = [
+    {
+      icon: MapPin,
+      title: t("contact.visit.title"),
+      description: t("contact.visit.description"),
+      details: t("contact.visit.details"),
+    },
+    {
+      icon: Phone,
+      title: t("contact.call.title"),
+      description: t("contact.call.description"),
+      details: t("contact.call.details"),
+    },
+    {
+      icon: Mail,
+      title: t("contact.email.title"),
+      description: t("contact.email.description"),
+      details: t("contact.email.details"),
+    },
+    {
+      icon: Clock,
+      title: t("contact.hours.title"),
+      description: t("contact.hours.description"),
+      details: t("contact.hours.details"),
+    },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,13 +62,11 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
     console.log("Form submitted:", formData);
     setIsSubmitting(false);
 
-    // Reset form
     setFormData({
       name: "",
       email: "",
@@ -76,32 +75,31 @@ export default function ContactPage() {
       message: "",
     });
 
-    alert("Thank you for your message! We'll get back to you soon.");
+    alert(t("contact.form.success"));
   };
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/contact-us.png')] bg-cover">
+      <Section className="relative min-h-screen flex items-center justify-center bg-[url('/images/contact-us.png')] bg-cover">
         <div className="absolute inset-0 bg-[url('/elegant-black-leather-chairs-luxury-meeting.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <p className="text-yellow-400 font-normal text-lg mb-4">
-              Contact us
+              {t("contact.hero.subtitle")}
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
-              Let's create your
+              {t("contact.hero.title1")}
             </Heading>
             <Heading level={1} gradient className="mb-0">
-              space together
+              {t("contact.hero.title2")}
             </Heading>
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
-              Whether you're furnishing a single room, a new home, or an entire
-              project, our team is here to guide you.
+              {t("contact.hero.description")}
             </Text>
           </AnimatedContainer>
         </div>
@@ -114,7 +112,7 @@ export default function ContactPage() {
           <AnimatedContainer animation="slide-up">
             <div>
               <Heading level={2} className="mb-0">
-                Get in touch
+                {t("contact.info.title")}
               </Heading>
               <div className="space-y-8">
                 {contactInfo.map((info, index) => (
@@ -152,7 +150,7 @@ export default function ContactPage() {
                     htmlFor="name"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Name
+                    {t("contact.form.name")}
                   </label>
                   <Input
                     id="name"
@@ -161,7 +159,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    placeholder="Enter your name"
+                    placeholder={t("contact.form.namePlaceholder")}
                     className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
                   />
                 </div>
@@ -171,7 +169,7 @@ export default function ContactPage() {
                     htmlFor="email"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Email address
+                    {t("contact.form.email")}
                   </label>
                   <Input
                     id="email"
@@ -180,7 +178,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="Enter your email address"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
                   />
                 </div>
@@ -190,7 +188,7 @@ export default function ContactPage() {
                     htmlFor="location"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Location
+                    {t("contact.form.location")}
                   </label>
                   <Input
                     id="location"
@@ -198,7 +196,7 @@ export default function ContactPage() {
                     type="text"
                     value={formData.location}
                     onChange={handleInputChange}
-                    placeholder="Enter your location"
+                    placeholder={t("contact.form.locationPlaceholder")}
                     className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
                   />
                 </div>
@@ -208,7 +206,7 @@ export default function ContactPage() {
                     htmlFor="contact"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Contact
+                    {t("contact.form.contact")}
                   </label>
                   <Input
                     id="contact"
@@ -216,7 +214,7 @@ export default function ContactPage() {
                     type="tel"
                     value={formData.contact}
                     onChange={handleInputChange}
-                    placeholder="Enter your contact number"
+                    placeholder={t("contact.form.contactPlaceholder")}
                     className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
                   />
                 </div>
@@ -226,7 +224,7 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-medium text-white mb-2"
                   >
-                    Message
+                    {t("contact.form.message")}
                   </label>
                   <Textarea
                     id="message"
@@ -235,7 +233,7 @@ export default function ContactPage() {
                     required
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Enter your message"
+                    placeholder={t("contact.form.messagePlaceholder")}
                     className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400 resize-none"
                   />
                 </div>
@@ -245,13 +243,13 @@ export default function ContactPage() {
                   disabled={isSubmitting}
                   className="w-full bg-yellow-400 text-black hover:bg-yellow-500 py-3 text-lg font-normal disabled:opacity-50"
                 >
-                  {isSubmitting ? "Submitting..." : "Submit"}
+                  {isSubmitting
+                    ? t("contact.form.submitting")
+                    : t("contact.form.submit")}
                 </Button>
 
                 <p className="text-sm text-gray-400 leading-relaxed">
-                  By pressing the submit button, I agree to Riyash contacting me
-                  by email. I also understand that any information I've shared
-                  in this form is subject to Riyash privacy policy.
+                  {t("contact.form.privacy")}
                 </p>
               </form>
             </div>
@@ -264,23 +262,23 @@ export default function ContactPage() {
         <AnimatedContainer animation="fade-in">
           <div className="text-center mb-12">
             <Heading level={2} className="mb-0">
-              Visit our
+              {t("contact.map.title1")}
             </Heading>
             <Heading level={2} gradient className="mb-0">
-              showrooms
+              {t("contact.map.title2")}
             </Heading>
             <Text className="text-gray-300 max-w-2xl mx-auto">
-              Experience our furniture collections in person at our showrooms
-              across the region. Each location offers the full Riyash gallery
-              experience.
+              {t("contact.map.description")}
             </Text>
           </div>
           <div className="bg-gray-800 rounded-lg h-96 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="h-16 w-16 text-yellow-400 mx-auto mb-4" />
-              <Text className="text-gray-400">Interactive map coming soon</Text>
+              <Text className="text-gray-400">
+                {t("contact.map.comingSoon")}
+              </Text>
               <Text className="text-sm text-gray-500 mt-2">
-                Visit our showrooms in Riyadh, Jeddah, Tabuk, and Najran
+                {t("contact.map.locations")}
               </Text>
             </div>
           </div>
@@ -288,24 +286,23 @@ export default function ContactPage() {
       </Section>
 
       {/* Final CTA Section */}
-      <Section className="  text-center  bg-[url('/bg.svg')] bg-cover">
+      <Section className="text-center bg-[url('/bg.svg')] bg-cover">
         <AnimatedContainer animation="slide-up">
           <Heading level={1} gradient className="mb-0">
-            LET'S DESIGN YOUR
+            {t("contact.cta.title1")}
           </Heading>
           <Heading level={1} className="mb-0">
-            NEXT SPACE TOGETHER
+            {t("contact.cta.title2")}
           </Heading>
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
-            Whether you're furnishing a single room or a full-scale project,
-            Riyash is here to guide, create, and deliver.
+            {t("contact.cta.description")}
           </Text>
           <Button
             size="lg"
             className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
           >
             <ArrowRight className="mr-2 h-5 w-5" />
-            Request a Consultation
+            {t("contact.cta.button")}
           </Button>
         </AnimatedContainer>
       </Section>
