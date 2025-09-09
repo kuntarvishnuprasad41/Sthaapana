@@ -158,9 +158,9 @@
   },
   "experience": {
     "hero": {
-      "tagline": "Riyash Experience",
-      "heading1": "Shopping reimagined",
-      "heading2": "The Riyash experience",
+      "subtitle": "Riyash Experience",
+      "title1": "Shopping reimagined",
+      "title2": "The Riyash experience",
       "description": "Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
     },
     "gallery": {
@@ -201,8 +201,8 @@
       }
     },
     "cta": {
-      "heading1": "LET'S DESIGN YOUR",
-      "heading2": "NEXT SPACE TOGETHER",
+      "title1": "LET'S DESIGN YOUR",
+      "title2": "NEXT SPACE TOGETHER",
       "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
