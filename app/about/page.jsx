@@ -80,6 +80,30 @@ export default function AboutPage() {
         </div>
       </Section>
 
+      <Section className="bg-black">
+        <div className="flex gap-2">
+          <Heading level={2} className="mb-0">
+            Founder's
+          </Heading>
+          <Heading level={2} gradient className="mb-0">
+            Message
+          </Heading>
+        </div>
+        <div className="mx-auto">
+          {" "}
+          <Text>
+            “With a shared vision to redefine furniture experiences, we built
+            Riyash on trust, creativity, and uncompromising quality. As
+            partners, we believe in uniting craftsmanship with innovation to
+            deliver spaces that inspire and endure. Our journey is driven by a
+            passion for design, a dedication to excellence, and a commitment to
+            creating furniture that elevates lifestyles while leaving a lasting
+            impression in every home and project we touch.”
+          </Text>
+          <Text>- Chief Executive Officer</Text>
+        </div>
+      </Section>
+
       {/* Company Info Section */}
 
       <div className="flex w-screen flex-col items-center lg:items-start  lg:flex-row lg:justify-between  text-black bg-[url('/bg.svg')] bg-cover bg-center">

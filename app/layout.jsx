@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function RootLayout({ children }) {
   return (
     <ClientLayout>
-      {children}
+      <div className="flicker-fix"> {children}</div>
       <SpeedInsights />
       <Analytics />
     </ClientLayout>

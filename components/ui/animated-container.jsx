@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react";
 
 export function AnimatedContainer({
   children,
@@ -10,35 +10,35 @@ export function AnimatedContainer({
   threshold = 0.1,
   ...props
 }) {
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef(null)
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => setIsVisible(true), delay)
+        if (entry.isIntersecting && !isVisible) {
+          setTimeout(() => setIsVisible(true), delay);
         }
       },
-      { threshold },
-    )
+      { threshold }
+    );
 
     if (ref.current) {
-      observer.observe(ref.current)
+      observer.observe(ref.current);
     }
 
     return () => {
       if (ref.current) {
-        observer.unobserve(ref.current)
+        observer.unobserve(ref.current);
       }
-    }
-  }, [delay, threshold])
+    };
+  }, [delay, threshold, isVisible]); // ← Added isVisible to prevent retrigger
 
   const animationClasses = {
     "fade-in": "animate-fade-in",
     "slide-up": "animate-slide-up",
     "scale-in": "animate-scale-in",
-  }
+  };
 
   return (
     <div
@@ -50,5 +50,5 @@ export function AnimatedContainer({
     >
       {children}
     </div>
-  )
+  );
 }
