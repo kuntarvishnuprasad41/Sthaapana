@@ -161,41 +161,53 @@
   },
   "experience": {
     "hero": {
-      "title": "Shopping reimagined",
-      "subtitle": "The Riyash experience",
+      "subtitle": "Riyash Experience",
+      "title1": "Shopping reimagined",
+      "title2": "The Riyash experience",
       "description": "Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
     },
     "gallery": {
-      "title": "A gallery,",
-      "subtitle": "not a store",
-      "description": "Riyash showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
+      "title1": "A gallery,",
+      "title2": "not a store",
+      "description": "Riyash showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality."
     },
-    "experience": {
-      "title": "EXPERIENCE RIYASH",
-      "subtitle": "FOR YOURSELF",
-      "description": "Visit our showroom to see, feel, and experience the difference. Book a personalized tour with our team today.",
-      "cta": "Visit Our Stores"
-    }
-  },
-  "contact": {
-    "hero": {
-      "title": "Let's create your",
-      "subtitle": "space together",
-      "description": "Whether you're furnishing a single room, a new home, or an entire project, our team is here to guide you."
+    "features": {
+      "immersive": {
+        "title": "Immersive Showrooms",
+        "description": "Walk through complete room concepts designed to inspire and help you visualize your perfect space."
+      },
+      "consultation": {
+        "title": "Personal Design Consultation",
+        "description": "Our expert designers guide you through curated spaces, offering personalized insights and recommendations."
+      },
+      "custom": {
+        "title": "Custom Solutions",
+        "description": "From ready-made collections to bespoke pieces, we create solutions tailored to your unique style."
+      },
+      "confidence": {
+        "title": "Confidence in Choice",
+        "description": "Experience furniture in context, making decisions with complete confidence and joy."
+      }
     },
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "Enter your name",
-      "email": "Email address",
-      "emailPlaceholder": "Enter your email address",
-      "location": "Location",
-      "locationPlaceholder": "Enter your location",
-      "contact": "Contact",
-      "contactPlaceholder": "Enter your contact number",
-      "message": "Message",
-      "messagePlaceholder": "Enter your message",
-      "submit": "Submit",
-      "consent": "By pressing the submit button, I agree to Riyash contacting me by email. I also understand that any information I've shared in this form is subject to Riyash privacy policy."
+    "visit": {
+      "locations": {
+        "title": "Multiple Locations",
+        "description": "Visit our showrooms across the region to experience the Riyash difference firsthand."
+      },
+      "scheduling": {
+        "title": "Flexible Scheduling",
+        "description": "Book personalized tours at your convenience with our dedicated design team."
+      },
+      "guidance": {
+        "title": "Expert Guidance",
+        "description": "Our design consultants are here to help you create spaces that truly reflect your lifestyle."
+      }
+    },
+    "cta": {
+      "title1": "LET'S DESIGN YOUR",
+      "title2": "NEXT SPACE TOGETHER",
+      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "button": "Request a Consultation"
     }
   },
   "footer": {
