@@ -9,6 +9,7 @@ import { Heading, Text } from "../../components/ui/typography";
 import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import ContactForm from "@/components/contactForm";
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -46,9 +47,11 @@ export default function ContactPage() {
     location: "",
     contact: "",
     message: "",
+    website: "", // honeypot field
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState(null); // success | error | bot
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -61,21 +64,38 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setStatus(null);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    console.log("Form submitted:", formData);
-    setIsSubmitting(false);
+      const result = await res.json();
 
-    setFormData({
-      name: "",
-      email: "",
-      location: "",
-      contact: "",
-      message: "",
-    });
-
-    alert(t("contact.form.success"));
+      if (result.bot) {
+        setStatus("bot");
+      } else if (result.success) {
+        setStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          location: "",
+          contact: "",
+          message: "",
+          website: "",
+        });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -144,114 +164,7 @@ export default function ContactPage() {
           {/* Contact Form */}
           <AnimatedContainer animation="slide-up" delay={200}>
             <div className="bg-black/50 border border-gray-700 rounded-lg p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    {t("contact.form.name")}
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder={t("contact.form.namePlaceholder")}
-                    className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    {t("contact.form.email")}
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder={t("contact.form.emailPlaceholder")}
-                    className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="location"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    {t("contact.form.location")}
-                  </label>
-                  <Input
-                    id="location"
-                    name="location"
-                    type="text"
-                    value={formData.location}
-                    onChange={handleInputChange}
-                    placeholder={t("contact.form.locationPlaceholder")}
-                    className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="contact"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    {t("contact.form.contact")}
-                  </label>
-                  <Input
-                    id="contact"
-                    name="contact"
-                    type="tel"
-                    value={formData.contact}
-                    onChange={handleInputChange}
-                    placeholder={t("contact.form.contactPlaceholder")}
-                    className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-white mb-2"
-                  >
-                    {t("contact.form.message")}
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder={t("contact.form.messagePlaceholder")}
-                    className="bg-gray-800 border-gray-600 text-white placeholder:text-gray-400 focus:border-yellow-400 focus:ring-yellow-400 resize-none"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-yellow-400 text-black hover:bg-yellow-500 py-3 text-lg font-normal disabled:opacity-50"
-                >
-                  {isSubmitting
-                    ? t("contact.form.submitting")
-                    : t("contact.form.submit")}
-                </Button>
-
-                <p className="text-sm text-gray-400 leading-relaxed">
-                  {t("contact.form.privacy")}
-                </p>
-              </form>
+              <ContactForm />
             </div>
           </AnimatedContainer>
         </div>
