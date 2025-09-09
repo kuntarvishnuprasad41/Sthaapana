@@ -63,56 +63,73 @@
   },
   "about": {
     "hero": {
-      "title": "Crafting furniture that",
-      "subtitle": "inspires everyday living",
-      "description": "Riyash creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style that defines every lifestyle."
+      "tagline": "About Us",
+      "heading1": "Crafting furniture that",
+      "heading2": "inspires everyday living",
+      "description": "Riyash creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style."
     },
-    "story": {
-      "title": "Our story",
-      "description": "Blending craftsmanship and creativity to craft timeless, meaningful furniture."
+    "founder": {
+      "title1": "Founder's",
+      "title2": "Message",
+      "message": "“With a shared vision to redefine furniture experiences, we built Riyash on trust, creativity, and uncompromising quality. Our journey is driven by a passion for design, a dedication to excellence, and a commitment to creating furniture that elevates lifestyles.”",
+      "signature": "Chief Executive Officer"
     },
-    "mission": {
-      "title": "Our mission",
-      "description": "Making luxury design accessible through quality, innovation, and personalized service."
-    },
-    "vision": {
-      "title": "Our vision",
-      "description": "Shaping future lifestyles by setting trends, not simply following them."
+    "companyInfo": {
+      "story": {
+        "title": "Our story",
+        "description": "Blending craftsmanship and creativity to craft timeless, meaningful furniture."
+      },
+      "mission": {
+        "title": "Our mission",
+        "description": "Making luxury design accessible through quality, innovation, and personalized service."
+      },
+      "vision": {
+        "title": "Our vision",
+        "description": "Shaping future lifestyles by setting trends, not simply following them."
+      }
     },
     "beginning": {
-      "title": "The beginning",
-      "subtitle": "of Riyash",
-      "description": "Furniture should inspire design, not just occupy space. Riyash was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward across homes and projects."
+      "title1": "The beginning",
+      "title2": "of Riyash",
+      "description": "Furniture should inspire design, not just occupy space. Riyash was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward."
     },
     "drives": {
-      "title": "What drives us",
-      "subtitle": "forward",
-      "description": "We believe luxury should be within reach. Every Riyash piece—ready-made or custom—is built to the highest standards, delivering elegance, comfort, and an inspiring shopping journey."
+      "title1": "What drives us",
+      "title2": "forward",
+      "description": "We believe luxury should be within reach. Every Riyash piece—ready-made or custom—is built to the highest standards."
     },
-    "headed": {
-      "title": "Where we're",
-      "subtitle": "headed",
+    "future": {
+      "title1": "Where we're",
+      "title2": "headed",
       "description": "Our goal is bold: to be among the top five furniture brands in the region by building design trends and shaping extraordinary living experiences."
     },
-    "values": {
+    "valuesHeader": {
       "title": "Our",
-      "subtitle": "values",
+      "subtitle": "values"
+    },
+    "values": {
       "quality": {
         "title": "Quality first",
-        "description": "Every Riyash piece is crafted with uncompromising standards of excellence, ensuring timeless beauty, refined details, and exceptional performance across every collection we create."
+        "description": "Every Riyash piece is crafted with uncompromising standards of excellence."
       },
       "customer": {
         "title": "Customer first",
-        "description": "We place people at the heart of every decision, designing solutions that reflect unique lifestyles, individual needs, and personalized experiences our customers truly deserve."
+        "description": "We place people at the heart of every decision, designing solutions that reflect unique lifestyles."
       },
       "creativity": {
         "title": "Creativity",
-        "description": "Innovation drives us forward embracing evolving trends, and artistic craftsmanship to consistently deliver fresh, inspiring furniture that transforms spaces into meaningful living experiences."
+        "description": "Innovation drives us forward, embracing evolving trends and artistic craftsmanship."
       },
       "trust": {
         "title": "Trust",
-        "description": "Our foundation is built on integrity, transparency, and reliability, fostering long-term partnerships with clients and communities who value our consistency, honesty, and commitment."
+        "description": "Our foundation is built on integrity, transparency, and reliability."
       }
+    },
+    "cta": {
+      "heading1": "LET'S DESIGN YOUR",
+      "heading2": "NEXT SPACE TOGETHER",
+      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "button": "Request a Consultation"
     }
   },
   "projects": {

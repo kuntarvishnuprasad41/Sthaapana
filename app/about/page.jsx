@@ -1,56 +1,55 @@
+"use client";
+
 import Image from "next/image";
+
 import { Button } from "../../components/ui/button";
 import { Section, SectionHeader } from "../../components/ui/section";
 import { Heading, Text } from "../../components/ui/typography";
 import { AnimatedContainer } from "../../components/ui/animated-container";
 import { ArrowRight, Award, Users, Lightbulb, Shield } from "lucide-react";
-
-const companyInfo = [
-  {
-    title: "Our story",
-    description:
-      "Blending craftsmanship and creativity to craft timeless, meaningful furniture.",
-  },
-  {
-    title: "Our mission",
-    description:
-      "Making luxury design accessible through quality, innovation, and personalized service.",
-  },
-  {
-    title: "Our vision",
-    description:
-      "Shaping future lifestyles by setting trends, not simply following them.",
-  },
-];
-
-const values = [
-  {
-    icon: Award,
-    title: "Quality first",
-    description:
-      "Every Riyash piece is crafted with uncompromising standards of excellence, ensuring timeless beauty, refined details, and exceptional performance across every collection we create.",
-  },
-  {
-    icon: Users,
-    title: "Customer first",
-    description:
-      "We place people at the heart of every decision, designing solutions that reflect unique lifestyles, individual needs, and personalized experiences our customers truly deserve.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Creativity",
-    description:
-      "Innovation drives us forward embracing evolving trends, and artistic craftsmanship to consistently deliver fresh, inspiring furniture that transforms spaces into meaningful living experiences.",
-  },
-  {
-    icon: Shield,
-    title: "Trust",
-    description:
-      "Our foundation is built on integrity, transparency, and reliability, fostering long-term partnerships with clients and communities who value our consistency, honesty, and commitment.",
-  },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export default function AboutPage() {
+  const { t } = useTranslation();
+
+  const companyInfo = [
+    {
+      title: t("about.companyInfo.story.title"),
+      description: t("about.companyInfo.story.description"),
+    },
+    {
+      title: t("about.companyInfo.mission.title"),
+      description: t("about.companyInfo.mission.description"),
+    },
+    {
+      title: t("about.companyInfo.vision.title"),
+      description: t("about.companyInfo.vision.description"),
+    },
+  ];
+
+  const values = [
+    {
+      icon: Award,
+      title: t("about.values.quality.title"),
+      description: t("about.values.quality.description"),
+    },
+    {
+      icon: Users,
+      title: t("about.values.customer.title"),
+      description: t("about.values.customer.description"),
+    },
+    {
+      icon: Lightbulb,
+      title: t("about.values.creativity.title"),
+      description: t("about.values.creativity.description"),
+    },
+    {
+      icon: Shield,
+      title: t("about.values.trust.title"),
+      description: t("about.values.trust.description"),
+    },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -59,179 +58,42 @@ export default function AboutPage() {
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             <p className="text-yellow-400 font-semibold text-lg mb-4">
-              About Us
+              {t("about.hero.tagline")}
             </p>
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
-              Crafting furniture that
+              {t("about.hero.heading1")}
             </Heading>
             <Heading level={1} gradient className="mb-0">
-              inspires everyday living
+              {t("about.hero.heading2")}
             </Heading>
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
-              Riyash creates furniture that blends timeless craftsmanship and
-              modern design, elevating every space with pieces that offer
-              elegance, comfort, and style that defines every lifestyle.
+              {t("about.hero.description")}
             </Text>
           </AnimatedContainer>
         </div>
       </Section>
 
+      {/* Founder Message */}
       <Section className="bg-black">
         <div className="flex gap-2">
           <Heading level={2} className="mb-0">
-            Founder's
+            {t("about.founder.title1")}
           </Heading>
           <Heading level={2} gradient className="mb-0">
-            Message
+            {t("about.founder.title2")}
           </Heading>
         </div>
         <div className="mx-auto">
-          {" "}
-          <Text>
-            “With a shared vision to redefine furniture experiences, we built
-            Riyash on trust, creativity, and uncompromising quality. As
-            partners, we believe in uniting craftsmanship with innovation to
-            deliver spaces that inspire and endure. Our journey is driven by a
-            passion for design, a dedication to excellence, and a commitment to
-            creating furniture that elevates lifestyles while leaving a lasting
-            impression in every home and project we touch.”
-          </Text>
-          <Text>- Chief Executive Officer</Text>
+          <Text>{t("about.founder.message")}</Text>
+          <Text>- {t("about.founder.signature")}</Text>
         </div>
       </Section>
 
-      {/* 
-      <div className="flex w-screen flex-col items-center lg:items-start  lg:flex-row lg:justify-between  text-black bg-[url('/bg.svg')] bg-cover bg-center">
-        <div>
-          {" "}
-          <Section className="">
-            <div className="">
-              {companyInfo.map((info, index) => (
-                <AnimatedContainer
-                  key={info.title}
-                  animation="slide-up"
-                  delay={index * 100}
-                >
-                  <div className="text-center">
-                    <Heading level={5} className="mb-0">
-                      {info.title}
-                    </Heading>
-                    <Text
-                      className="text-gray-300 mb-10 w-60 text-sm"
-                      size="sm"
-                    >
-                      {info.description}
-                    </Text>
-                  </div>
-                </AnimatedContainer>
-              ))}
-            </div>
-          </Section>
-        </div>
-        <div>
-        
-          <Section>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <AnimatedContainer animation="fade-in">
-                <div className="relative">
-                  <Image
-                    src="/images/modern.png"
-                    alt="Furniture craftsmanship"
-                    width={800}
-                    height={600}
-                    className="shadow-2xl"
-                  />
-                </div>
-              </AnimatedContainer>
-              <AnimatedContainer animation="slide-up" delay={200}>
-                <div>
-                  <Heading level={2} className="mb-0">
-                    The beginning
-                  </Heading>
-                  <Heading level={2} gradient className="mb-0">
-                    of Riyash
-                  </Heading>
-                  <Text className="text-gray-300 leading-relaxed">
-                    Furniture should inspire design, not just occupy space.
-                    Riyash was founded to merge craftsmanship and creativity,
-                    creating timeless designs that feel personal and
-                    trend-forward across homes and projects.
-                  </Text>
-                </div>
-              </AnimatedContainer>
-            </div>
-          </Section>
- 
-          <Section className="">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <AnimatedContainer animation="slide-up">
-                <div>
-                  <Heading level={2} className="mb-0">
-                    What drives us
-                  </Heading>
-                  <Heading level={2} gradient className="mb-0">
-                    forward
-                  </Heading>
-                  <Text className="text-gray-300 leading-relaxed">
-                    We believe luxury should be within reach. Every Riyash
-                    piece—ready-made or custom—is built to the highest
-                    standards, delivering elegance, comfort, and an inspiring
-                    shopping journey.
-                  </Text>
-                </div>
-              </AnimatedContainer>
-              <AnimatedContainer animation="fade-in" delay={200}>
-                <div className="relative">
-                  <Image
-                    src="/images/lifestyle.png"
-                    alt="Luxury furniture showroom"
-                    width={800}
-                    height={600}
-                    className=" shadow-2xl"
-                  />
-                </div>
-              </AnimatedContainer>
-            </div>
-          </Section>
-
-          
-          <Section>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <AnimatedContainer animation="fade-in">
-                <div className="relative">
-                  <Image
-                    src="/images/headed.png"
-                    alt="Future vision"
-                    width={800}
-                    height={600}
-                    className=" shadow-2xl"
-                  />
-                </div>
-              </AnimatedContainer>
-              <AnimatedContainer animation="slide-up" delay={200}>
-                <div>
-                  <Heading level={2} className="mb-0">
-                    Where we're
-                  </Heading>
-                  <Heading level={2} gradient className="mb-0">
-                    headed
-                  </Heading>
-                  <Text className="text-gray-300 leading-relaxed">
-                    Our goal is bold: to be among the top five furniture brands
-                    in the region by building design trends and shaping
-                    extraordinary living experiences.
-                  </Text>
-                </div>
-              </AnimatedContainer>
-            </div>
-          </Section>
-        </div>
-      </div> */}
-
+      {/* Sidebar + Content */}
       <div className="flex w-screen flex-col items-center lg:items-start lg:flex-row lg:justify-between text-black bg-[url('/bg.svg')] bg-cover bg-center">
         {/* Sticky Sidebar */}
         <div className="w-full lg:w-1/5 px-4 py-6 lg:sticky lg:top-20 self-start h-fit">
@@ -279,13 +141,13 @@ export default function AboutPage() {
               <AnimatedContainer animation="slide-up" delay={200}>
                 <div>
                   <Heading level={2} className="mb-0">
-                    The beginning
+                    {t("about.beginning.title1")}
                   </Heading>
                   <Heading level={2} gradient className="mb-0">
-                    of Riyash
+                    {t("about.beginning.title2")}
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
-                    Furniture should inspire design, not just occupy space...
+                    {t("about.beginning.description")}
                   </Text>
                 </div>
               </AnimatedContainer>
@@ -298,13 +160,13 @@ export default function AboutPage() {
               <AnimatedContainer animation="slide-up">
                 <div>
                   <Heading level={2} className="mb-0">
-                    What drives us
+                    {t("about.drives.title1")}
                   </Heading>
                   <Heading level={2} gradient className="mb-0">
-                    forward
+                    {t("about.drives.title2")}
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
-                    We believe luxury should be within reach...
+                    {t("about.drives.description")}
                   </Text>
                 </div>
               </AnimatedContainer>
@@ -339,14 +201,13 @@ export default function AboutPage() {
               <AnimatedContainer animation="slide-up" delay={200}>
                 <div>
                   <Heading level={2} className="mb-0">
-                    Where we're
+                    {t("about.future.title1")}
                   </Heading>
                   <Heading level={2} gradient className="mb-0">
-                    headed
+                    {t("about.future.title2")}
                   </Heading>
                   <Text className="text-gray-300 leading-relaxed">
-                    Our goal is bold: to be among the top five furniture
-                    brands...
+                    {t("about.future.description")}
                   </Text>
                 </div>
               </AnimatedContainer>
@@ -357,7 +218,11 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <Section className="bg-black">
-        <SectionHeader title="Our" subtitle="values" className="mb-16" />
+        <SectionHeader
+          title={t("about.valuesHeader.title")}
+          subtitle={t("about.valuesHeader.subtitle")}
+          className="mb-16"
+        />
         <div className="grid md:grid-cols-2 gap-8">
           {values.map((value, index) => (
             <AnimatedContainer
@@ -393,21 +258,20 @@ export default function AboutPage() {
         <Section className="bg-[url('/bg.svg')] bg-cover bg-center text-center">
           <AnimatedContainer animation="slide-up">
             <Heading level={1} gradient className="mb-0">
-              LET'S DESIGN YOUR
+              {t("about.cta.heading1")}
             </Heading>
             <Heading level={1} className="mb-0">
-              NEXT SPACE TOGETHER
+              {t("about.cta.heading2")}
             </Heading>
             <Text size="lg" className="mb-12 max-w-2xl mx-auto">
-              Whether you're furnishing a single room or a full-scale project,
-              Riyash is here to guide, create, and deliver.
+              {t("about.cta.description")}
             </Text>
             <Button
               size="lg"
               className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
             >
               <ArrowRight className="mr-2 h-5 w-5" />
-              Request a Consultation
+              {t("about.cta.button")}
             </Button>
           </AnimatedContainer>
         </Section>
