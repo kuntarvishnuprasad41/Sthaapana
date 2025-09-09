@@ -50,23 +50,23 @@ export default function HomePage() {
 
   const featuredProjects = [
     {
-      name: t("projects.items.bananHotelSuites"),
-      location: t("projects.locations.tabuk"),
+      name: "Banan Hotel Suites",
+      location: "Tabuk",
       image: "/luxury-hotel-suite.png",
     },
     {
-      name: t("projects.items.majmaahUniversity"),
-      location: t("projects.locations.riyadh"),
+      name: "Majmaah University",
+      location: "Riyadh",
       image: "/university-modern-interior-design.png",
     },
     {
-      name: t("projects.items.ananHotel"),
-      location: t("projects.locations.riyadh"),
+      name: "Anan Hotel",
+      location: "Riyadh",
       image: "/hotel-restaurant-luxury-interior.png",
     },
     {
-      name: t("projects.items.fituriPalaceHotel"),
-      location: t("projects.locations.riyadh"),
+      name: "Fituri Palace Hotel",
+      location: "Riyadh",
       image: "/palace-hotel-luxury-bedroom.png",
     },
   ];

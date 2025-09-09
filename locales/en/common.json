@@ -134,10 +134,19 @@
   },
   "projects": {
     "hero": {
+      "title": "View More",
       "tagline": "Projects",
       "heading1": "Trusted to transform",
       "heading2": "spaces across the region",
       "description": "From luxury hotels to universities, hospitals, and iconic developments, Riyash delivers furniture solutions that combine elegance, durability, and design excellence."
+    },
+    "items": {
+      "bananHotelSuits": {
+        "title": "Banan Hotel Suites",
+        "category": "Hospitality",
+        "location": "Tabuk, KSA",
+        "description": "Furnishing 150 luxury suites with bespoke furniture that blends comfort and elegance, creating a memorable guest experience."
+      }
     },
     "categories": {
       "All": "All",
