@@ -77,6 +77,9 @@ export default function ClientLayout({ children }) {
     >
       <head>
         <title>Riyash - Luxury Furniture</title>
+        <head>
+          <link rel="icon" href="/logo.svg" />
+        </head>
         <meta
           name="description"
           content="Luxury furniture, crafted for every lifestyle"
