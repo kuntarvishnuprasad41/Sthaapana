@@ -277,7 +277,13 @@
     }
   },
   "footer": {
+    "navigation": {
+      "about": "About Us",
+      "experience": "Riyash Experience",
+      "projects": "Our Projects",
+      "contact": "Contact Us"
+    },
     "privacy": "Privacy policy",
-    "rights": "© Riyash 2025. All Rights Reserved"
+    "rights": "All Rights Reserved"
   }
 }

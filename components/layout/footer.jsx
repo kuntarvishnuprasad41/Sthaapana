@@ -1,13 +1,16 @@
+"use client";
+
 import Link from "next/link";
-import { Logo, LogoB } from "../ui/logo";
+import { LogoB } from "../ui/logo";
 import { Linkedin, Instagram, Facebook } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6"; // X.com logo
+import { useTranslation } from "@/lib/i18n";
 
 const navigation = [
-  { name: "About Us", href: "/about" },
-  { name: "Riyash Experience", href: "/experience" },
-  { name: "Our Projects", href: "/projects" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "about", href: "/about" },
+  { name: "experience", href: "/experience" },
+  { name: "projects", href: "/projects" },
+  { name: "contact", href: "/contact" },
 ];
 
 const socialLinks = [
@@ -18,9 +21,12 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gradient-to-r from-yellow-400 to-yellow-600">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        {/* Social links */}
         <div className="flex justify-center space-x-6 md:order-2">
           {socialLinks.map((item) => (
             <Link
@@ -33,6 +39,8 @@ export function Footer() {
             </Link>
           ))}
         </div>
+
+        {/* Navigation + Privacy */}
         <div className="mt-8 md:order-1 md:mt-0">
           <div className="flex flex-col md:flex-row md:items-center md:space-x-8">
             <LogoB className="mb-4 md:mb-0" />
@@ -43,7 +51,7 @@ export function Footer() {
                   href={item.href}
                   className="text-black hover:text-gray-700 transition-colors"
                 >
-                  {item.name}
+                  {t(`footer.navigation.${item.name}`)}
                 </Link>
               ))}
             </div>
@@ -53,9 +61,9 @@ export function Footer() {
               href="/privacy"
               className="hover:text-gray-700 transition-colors"
             >
-              Privacy policy
+              {t("footer.privacy")}
             </Link>
-            <p className="mt-2 md:mt-0">© Riyash 2025. All Rights Reserved</p>
+            <p className="mt-2 md:mt-0">© Riyash 2025. {t("footer.rights")}</p>
           </div>
         </div>
       </div>
