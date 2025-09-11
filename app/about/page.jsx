@@ -58,9 +58,9 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[url('/luxury-furniture-craftsmanship-workshop.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            <p className="text-yellow-400 font-semibold text-lg mb-4">
+            {/* <p className="text-yellow-400 font-semibold text-lg mb-4">
               {t("about.hero.tagline")}
-            </p>
+            </p> */}
           </AnimatedContainer>
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
