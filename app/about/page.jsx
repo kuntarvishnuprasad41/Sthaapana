@@ -221,7 +221,7 @@ export default function AboutPage() {
       <Section className="bg-black">
         <SectionHeader
           title={t("about.valuesHeader.title")}
-          subtitle={t("about.valuesHeader.subtitle")}
+          // subtitle={t("about.valuesHeader.subtitle")}
           className="mb-16"
         />
         <div className="grid md:grid-cols-2 gap-8">
