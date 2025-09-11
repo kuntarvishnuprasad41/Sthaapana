@@ -423,7 +423,7 @@ export default function HomePage() {
   // );
   const router = useRouter();
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" dir="ltr">
       {/* Hero Section */}
       <Section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
@@ -563,9 +563,9 @@ export default function HomePage() {
 
       {/* Shopping Experience Header */}
       <SectionHeader
-        title="Shopping"
-        subtitle="reimagined"
-        description="Buying furniture with Riyash is designed as an experience..."
+        title={t("home.shopping.title")}
+        subtitle={t("home.shopping.subtitle")}
+        description={t("home.shopping.description")}
         className="mb-16"
       />
 
