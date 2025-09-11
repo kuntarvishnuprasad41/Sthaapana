@@ -90,7 +90,7 @@ export default function AboutPage() {
         </div>
         <div className="mx-auto">
           <Text>{t("about.founder.message")}</Text>
-          <Text>- {t("about.founder.signature")}</Text>
+          {/* <Text>- {t("about.founder.signature")}</Text> */}
         </div>
       </Section>
 
