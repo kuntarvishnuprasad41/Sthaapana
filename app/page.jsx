@@ -457,7 +457,11 @@ export default function HomePage() {
             size="lg"
             style={
               locale === "ar"
-                ? { fontSize: "1.5rem", lineHeight: "2.25rem" }
+                ? {
+                    fontSize: "1.5rem",
+                    lineHeight: "2.25rem",
+                    marginTop: "1rem",
+                  }
                 : {}
             }
             className="mb-12 max-w-2xl mx-auto font-light"
