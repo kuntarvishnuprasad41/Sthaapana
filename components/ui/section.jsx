@@ -16,7 +16,7 @@ export function SectionHeader({
     <div className={`mx-auto max-w-4xl text-center ${className}`}>
       <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 animate-slide-up font-serif">
         {title}{" "}
-        {subtitle && (
+        {subtitle?.trim() && (
           <p className="text-yellow-400 font-normal  animate-fade-in font-serif">
             {subtitle}
           </p>
