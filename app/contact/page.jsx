@@ -11,7 +11,7 @@ import { ArrowRight, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
 import ContactForm from "@/components/contactForm";
 
-export default function ContactPage() {
+export default function ContactPage({ locale }) {
   const { t } = useTranslation();
 
   const contactInfo = [
@@ -109,7 +109,7 @@ export default function ContactPage() {
               {t("contact.hero.subtitle")}
             </p> */}
           </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={400}>
+          {/* <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
               {t("contact.hero.title1")}
             </Heading>
@@ -119,6 +119,32 @@ export default function ContactPage() {
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
+              {t("contact.hero.description")}
+            </Text>
+          </AnimatedContainer> */}
+
+          <AnimatedContainer animation="slide-up" delay={400}>
+            <Heading level={1} className="mb-0 font-serif font-medium">
+              {t("contact.hero.title1")}
+            </Heading>
+            <Heading level={1} gradient className="mb-0 font-serif font-medium">
+              {t("contact.hero.title2")}
+            </Heading>
+          </AnimatedContainer>
+          <AnimatedContainer animation="fade-in" delay={600}>
+            <Text
+              size="lg"
+              style={
+                locale === "ar"
+                  ? {
+                      fontSize: "1.5rem",
+                      lineHeight: "2.25rem",
+                      marginTop: "1rem",
+                    }
+                  : {}
+              }
+              className="mb-12 max-w-2xl mx-auto font-light"
+            >
               {t("contact.hero.description")}
             </Text>
           </AnimatedContainer>

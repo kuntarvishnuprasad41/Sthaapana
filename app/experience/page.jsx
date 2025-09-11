@@ -73,7 +73,7 @@ export default function ExperiencePage() {
               {t("experience.hero.subtitle")}
             </p> */}
           </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={400}>
+          {/* <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0 font-normal">
               {t("experience.hero.title1")}
             </Heading>
@@ -83,6 +83,32 @@ export default function ExperiencePage() {
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
+              {t("experience.hero.description")}
+            </Text>
+          </AnimatedContainer> */}
+
+          <AnimatedContainer animation="slide-up" delay={400}>
+            <Heading level={1} className="mb-0 font-serif font-medium">
+              {t("experience.hero.title1")}
+            </Heading>
+            <Heading level={1} gradient className="mb-0 font-serif font-medium">
+              {t("experience.hero.title2")}
+            </Heading>
+          </AnimatedContainer>
+          <AnimatedContainer animation="fade-in" delay={600}>
+            <Text
+              size="lg"
+              style={
+                locale === "ar"
+                  ? {
+                      fontSize: "1.5rem",
+                      lineHeight: "2.25rem",
+                      marginTop: "1rem",
+                    }
+                  : {}
+              }
+              className="mb-12 max-w-2xl mx-auto font-light"
+            >
               {t("experience.hero.description")}
             </Text>
           </AnimatedContainer>

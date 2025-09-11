@@ -122,7 +122,7 @@ export default function ProjectsPage() {
               {t("projects.hero.tagline")}
             </p> */}
           </AnimatedContainer>
-          <AnimatedContainer animation="slide-up" delay={400}>
+          {/* <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0">
               {t("projects.hero.heading1")}
             </Heading>
@@ -132,6 +132,31 @@ export default function ProjectsPage() {
           </AnimatedContainer>
           <AnimatedContainer animation="fade-in" delay={600}>
             <Text size="lg" className="max-w-3xl mx-auto">
+              {t("projects.hero.description")}
+            </Text>
+          </AnimatedContainer> */}
+          <AnimatedContainer animation="slide-up" delay={400}>
+            <Heading level={1} className="mb-0 font-serif font-medium">
+              {t("projects.hero.heading1")}
+            </Heading>
+            <Heading level={1} gradient className="mb-0 font-serif font-medium">
+              {t("projects.hero.heading2")}
+            </Heading>
+          </AnimatedContainer>
+          <AnimatedContainer animation="fade-in" delay={600}>
+            <Text
+              size="lg"
+              style={
+                locale === "ar"
+                  ? {
+                      fontSize: "1.5rem",
+                      lineHeight: "2.25rem",
+                      marginTop: "1rem",
+                    }
+                  : {}
+              }
+              className="mb-12 max-w-2xl mx-auto font-light"
+            >
               {t("projects.hero.description")}
             </Text>
           </AnimatedContainer>
