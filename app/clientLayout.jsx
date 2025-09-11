@@ -86,7 +86,7 @@ export default function ClientLayout({ children }) {
         />
         <meta name="generator" content="v0.app" />
       </head>
-      <body className="font-haskoy bg-black text-white">
+      <body className="font-haskoy bg-black text-white overflow-x-hidden">
         <ThemeProvider defaultTheme="dark">
           <Header />
           <main className="pt-20">{children}</main>

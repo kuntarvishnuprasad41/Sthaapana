@@ -449,9 +449,22 @@ export default function HomePage() {
           <Heading level={1} gradient className="mb-0 font-serif font-medium">
             {t("home.hero.subtitle")}
           </Heading>
-          <Text size="lg" className="mb-12 max-w-2xl mx-auto font-light">
+          {/* <Text size="lg" className="mb-12 max-w-2xl mx-auto font-light">
+            {t("home.hero.description")}
+          </Text> */}
+
+          <Text
+            size="lg"
+            style={
+              locale === "ar"
+                ? { fontSize: "1.5rem", lineHeight: "2.25rem" }
+                : {}
+            }
+            className="mb-12 max-w-2xl mx-auto font-light"
+          >
             {t("home.hero.description")}
           </Text>
+
           <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
             <Button
               size="lg"
