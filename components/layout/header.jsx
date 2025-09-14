@@ -79,14 +79,14 @@ export function Header() {
         {/* Desktop right side */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
           <LanguageSwitcher />
-          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+          {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
             <Button
               variant="outline"
               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
             >
               {t("home.cta.button")}
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </nav>
 
@@ -146,14 +146,14 @@ export function Header() {
                   {/* Language switcher + button */}
                   <div className="py-6 space-y-4 pb-8">
                     <LanguageSwitcher />
-                    <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+                    {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
                       <Button
                         variant="outline"
                         className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
                       >
                         {t("home.cta.button")}
                       </Button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
