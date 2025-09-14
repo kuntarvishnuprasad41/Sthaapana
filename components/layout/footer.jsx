@@ -7,10 +7,10 @@ import { FaXTwitter } from "react-icons/fa6"; // X.com logo
 import { useTranslation } from "@/lib/i18n";
 
 const navigation = [
-  { name: "about", href: "/about" },
-  { name: "experience", href: "/experience" },
-  { name: "projects", href: "/projects" },
-  { name: "contact", href: "/contact" },
+  { name: "about", href: "about" },
+  { name: "experience", href: "experience" },
+  { name: "projects", href: "projects" },
+  { name: "contact", href: "contact" },
 ];
 
 const socialLinks = [
@@ -20,8 +20,12 @@ const socialLinks = [
   { name: "Twitter", href: "#", icon: FaXTwitter },
 ];
 
+function withLocalePath(locale, path) {
+  return locale === "en" ? `/${path}` : `/${locale}/${path}`;
+}
+
 export function Footer() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   return (
     <footer className="bg-gradient-to-r from-yellow-400 to-yellow-600">
@@ -31,7 +35,7 @@ export function Footer() {
           {socialLinks.map((item) => (
             <Link
               key={item.name}
-              href={item.href}
+              href={withLocalePath(locale, item.href)}
               className="text-black hover:text-gray-700 transition-colors"
             >
               <span className="sr-only">{item.name}</span>

@@ -197,7 +197,7 @@ export default function ContactPage({ locale }) {
       </Section>
 
       {/* Map Section */}
-      <Section>
+      {/* <Section>
         <AnimatedContainer animation="fade-in">
           <div className="text-center mb-12">
             <Heading level={2} className="mb-0">
@@ -222,7 +222,7 @@ export default function ContactPage({ locale }) {
             </div>
           </div>
         </AnimatedContainer>
-      </Section>
+      </Section> */}
 
       {/* Final CTA Section */}
       <Section className="text-center bg-[url('/bg.svg')] bg-cover">
