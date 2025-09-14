@@ -67,12 +67,6 @@ const projects = [
     category: "Hospitality",
   },
   {
-    name: "Anan Hotel",
-    location: "Riyadh",
-    image: "/p10.png",
-    category: "Hospitality",
-  },
-  {
     name: "Narjan Municipality",
     location: "Narjan",
     image: "/p11.png",
