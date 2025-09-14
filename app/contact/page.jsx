@@ -177,7 +177,19 @@ export default function ContactPage({ locale }) {
                         </h4>
                         <p className="text-gray-400 mb-2">{info.description}</p>
                         <p className="text-yellow-400 font-medium">
-                          {info.details}
+                          {info.title !== "اتصل بنا" ? (
+                            info.details
+                          ) : (
+                            <span
+                              dir="ltr"
+                              style={{
+                                direction: "ltr",
+                                unicodeBidi: "bidi-override",
+                              }}
+                            >
+                              {info.details}
+                            </span>
+                          )}
                         </p>
                       </div>
                     </div>

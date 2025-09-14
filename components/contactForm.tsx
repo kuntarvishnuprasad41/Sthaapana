@@ -1,8 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "@/lib/i18n"; // your translation hook
 
 export default function ContactForm() {
+  const { t, locale } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -15,11 +18,13 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setStatus("");
@@ -34,9 +39,9 @@ export default function ContactForm() {
       const result = await res.json();
 
       if (result.bot) {
-        setStatus("⚠️ Bot submission blocked.");
+        setStatus("⚠️ " + t("form.botBlocked"));
       } else if (result.success) {
-        setStatus("✅ Message sent successfully!");
+        setStatus("✅ " + t("form.success"));
         setFormData({
           name: "",
           email: "",
@@ -46,18 +51,22 @@ export default function ContactForm() {
           website: "",
         });
       } else {
-        setStatus("❌ Something went wrong. Please try again.");
+        setStatus("❌ " + t("form.error"));
       }
     } catch (err) {
       console.error(err);
-      setStatus("⚠️ Submission failed.");
+      setStatus("⚠️ " + t("form.failed"));
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-4"
+      dir={locale === "ar" ? "rtl" : "ltr"} // auto direction
+    >
       {/* Honeypot (hidden) */}
       <input
         type="text"
@@ -65,14 +74,14 @@ export default function ContactForm() {
         value={formData.website}
         onChange={handleChange}
         style={{ display: "none" }}
-        tabIndex="-1"
+        tabIndex={-1}
         autoComplete="off"
       />
 
       <input
         type="text"
         name="name"
-        placeholder="Your Name"
+        placeholder={t("form.name")}
         value={formData.name}
         onChange={handleChange}
         required
@@ -81,7 +90,7 @@ export default function ContactForm() {
       <input
         type="email"
         name="email"
-        placeholder="Your Email"
+        placeholder={t("form.email")}
         value={formData.email}
         onChange={handleChange}
         required
@@ -90,7 +99,7 @@ export default function ContactForm() {
       <input
         type="text"
         name="location"
-        placeholder="Location"
+        placeholder={t("form.location")}
         value={formData.location}
         onChange={handleChange}
         className="border p-2 rounded w-full"
@@ -98,26 +107,26 @@ export default function ContactForm() {
       <input
         type="text"
         name="contact"
-        placeholder="Contact Number"
+        placeholder={t("form.contact")}
         value={formData.contact}
         onChange={handleChange}
         className="border p-2 rounded w-full"
       />
       <textarea
         name="message"
-        placeholder="Message"
+        placeholder={t("form.message")}
         value={formData.message}
         onChange={handleChange}
         className="border p-2 rounded w-full"
-        rows="4"
+        rows={4}
       ></textarea>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="bg-blue-500 text-white px-4 py-2 rounded"
+        className="bg-yellow-400 text-black px-4 py-2 rounded"
       >
-        {isSubmitting ? "Sending..." : "Send Message"}
+        {isSubmitting ? t("form.sending") : t("form.send")}
       </button>
 
       {status && <p className="mt-2">{status}</p>}

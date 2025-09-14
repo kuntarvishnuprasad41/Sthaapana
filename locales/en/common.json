@@ -285,5 +285,18 @@
     },
     "privacy": "Privacy policy",
     "rights": "All Rights Reserved"
+  },
+  "form": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "location": "Location",
+    "contact": "Contact Number",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Something went wrong. Please try again.",
+    "failed": "Submission failed.",
+    "botBlocked": "Bot submission blocked."
   }
 }
