@@ -135,7 +135,7 @@ export default function AboutPage() {
                       {info.title}
                     </Heading>
                     <Text
-                      className="text-gray-300 mb-10 w-60 text-sm"
+                      className="text-gray-300 mb-10 w-60 max-w-full mx-auto text-sm"
                       size="sm"
                     >
                       {info.description}
