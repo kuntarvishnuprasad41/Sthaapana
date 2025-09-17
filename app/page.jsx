@@ -423,7 +423,7 @@ export default function HomePage() {
   // );
   const router = useRouter();
   return (
-    <div className="min-h-screen" dir="ltr">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <Section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
@@ -534,7 +534,10 @@ export default function HomePage() {
             description={t("home.rooms.description")}
             className="mb-16"
           />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 font-serif font-medium">
+          <div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 font-serif font-medium"
+            dir="ltr"
+          >
             {roomCategories.map((category, index) => (
               <AnimatedContainer
                 key={category.name}

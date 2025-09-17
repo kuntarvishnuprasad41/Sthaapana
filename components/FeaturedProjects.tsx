@@ -51,7 +51,7 @@ export default function ProjectsCarouselSection({
   return (
     <Section>
       {/* Carousel */}
-      <div className="relative" ref={ref}>
+      <div className="relative" ref={ref} dir="ltr">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {featuredProjects.map((project, index) => (
