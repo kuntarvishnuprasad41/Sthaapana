@@ -500,6 +500,8 @@ export default function HomePage() {
               >
                 {t("home.lifestyle.subtitle")}
               </Heading>
+              <br />
+              <br />
               <Text className="text-gray-300 leading-relaxed">
                 {t("home.lifestyle.description")}
               </Text>

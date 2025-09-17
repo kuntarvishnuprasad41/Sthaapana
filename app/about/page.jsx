@@ -112,6 +112,8 @@ export default function AboutPage() {
             {t("about.founder.title2")}
           </Heading>
         </div>
+        <br />
+        <br />
         <div className="mx-auto">
           <Text>{t("about.founder.message")}</Text>
           {/* <Text>- {t("about.founder.signature")}</Text> */}
