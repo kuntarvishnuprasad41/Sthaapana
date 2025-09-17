@@ -104,7 +104,7 @@ export default function AboutPage() {
 
       {/* Founder Message */}
       <Section className="bg-black">
-        <div className="flex gap-2">
+        <div className="flex gap-6">
           <Heading level={2} className="mb-0">
             {t("about.founder.title1")}
           </Heading>
