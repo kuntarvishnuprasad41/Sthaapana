@@ -69,7 +69,7 @@ export default function ExperiencePage() {
         <div className="absolute inset-0 bg-[url('/images/experience.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            {/* <p className="text-yellow-400 font-normal text-lg mb-4">
+            {/* <p className="text-[#009BDE] font-normal text-lg mb-4">
               {t("experience.hero.subtitle")}
             </p> */}
           </AnimatedContainer>
@@ -144,12 +144,12 @@ export default function ExperiencePage() {
               delay={index * 100}
             >
               <div className="text-center group">
-                <div className="w-16 h-16 bg-yellow-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400/20 transition-colors">
-                  <feature.icon className="h-8 w-8 text-yellow-400" />
+                <div className="w-16 h-16 bg-[#009BDE]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#009BDE]/20 transition-colors">
+                  <feature.icon className="h-8 w-8 text-[#009BDE]" />
                 </div>
                 <Heading
                   level={4}
-                  className="mb-4 group-hover:text-yellow-400 transition-colors"
+                  className="mb-4 group-hover:text-[#009BDE] transition-colors"
                 >
                   {feature.title}
                 </Heading>
@@ -177,7 +177,7 @@ export default function ExperiencePage() {
           <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
+              className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 text-lg font-normal"
             >
               <ArrowRight className="mr-2 h-5 w-5" />
               {t("experience.cta.button")}

@@ -124,7 +124,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="bg-yellow-400 text-black px-4 py-2 rounded"
+        className="bg-[#009BDE] text-black px-4 py-2 rounded"
       >
         {isSubmitting ? t("form.sending") : t("form.send")}
       </button>

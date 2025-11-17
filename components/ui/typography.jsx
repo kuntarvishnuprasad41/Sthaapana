@@ -16,7 +16,7 @@ export function Heading({
     6: "text-base md:text-xl lg:text-2xl",
   };
 
-  const gradientClass = gradient ? "gold-gradient" : "text-white";
+  const gradientClass = gradient ? "blue-gradient" : "text-white";
 
   return (
     <Tag

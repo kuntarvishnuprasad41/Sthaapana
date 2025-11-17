@@ -34,7 +34,7 @@ export function LanguageSwitcher() {
         variant="ghost"
         size="sm"
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white hover:text-yellow-400 flex items-center gap-2"
+        className="text-white hover:text-[#009BDE] flex items-center gap-2"
       >
         <Globe className="h-4 w-4" />
         <span className="text-sm font-medium">
@@ -48,7 +48,7 @@ export function LanguageSwitcher() {
             <button
               onClick={() => switchLanguage("en")}
               className={`block w-full text-left px-4 py-2 text-sm hover:bg-white/10 transition-colors ${
-                currentLocale === "en" ? "text-yellow-400" : "text-white"
+                currentLocale === "en" ? "text-[#009BDE]" : "text-white"
               }`}
             >
               English
@@ -56,7 +56,7 @@ export function LanguageSwitcher() {
             <button
               onClick={() => switchLanguage("kan")}
               className={`block w-full text-left px-4 py-2 text-sm hover:bg-white/10 transition-colors ${
-                currentLocale === "kan" ? "text-yellow-400" : "text-white"
+                currentLocale === "kan" ? "text-[#009BDE]" : "text-white"
               }`}
             >
               Kannada

@@ -67,8 +67,8 @@
 //             <Link
 //               key={item.key}
 //               href={item.href}
-//               className={`text-sm font-semibold leading-6 transition-colors hover:text-yellow-400 ${
-//                 pathname === item.href ? "text-yellow-400" : "text-white"
+//               className={`text-sm font-semibold leading-6 transition-colors hover:text-[#009BDE] ${
+//                 pathname === item.href ? "text-[#009BDE]" : "text-white"
 //               }`}
 //             >
 //               {item.name}
@@ -82,7 +82,7 @@
 //           {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
 //             <Button
 //               variant="outline"
-//               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+//               className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
 //             >
 //               {t("home.cta.button")}
 //             </Button>
@@ -133,7 +133,7 @@
 //                         href={item.href}
 //                         className={`block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors hover:bg-white/10 ${
 //                           pathname === item.href
-//                             ? "text-yellow-400"
+//                             ? "text-[#009BDE]"
 //                             : "text-white"
 //                         }`}
 //                         onClick={() => setMobileMenuOpen(false)}
@@ -149,7 +149,7 @@
 //                     {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
 //                       <Button
 //                         variant="outline"
-//                         className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+//                         className="w-full border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
 //                       >
 //                         {t("home.cta.button")}
 //                       </Button>
@@ -239,8 +239,8 @@ export function Header() {
             <Link
               key={item.key}
               href={item.href}
-              className={`transition-colors hover:text-yellow-400 ${
-                pathname === item.href ? "text-yellow-400" : "text-white"
+              className={`transition-colors hover:text-[#009BDE] ${
+                pathname === item.href ? "text-[#009BDE]" : "text-white"
               }`}
             >
               {item.name}
@@ -254,7 +254,7 @@ export function Header() {
           {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               variant="outline"
-              className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+              className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
             >
               {t("home.cta.button")}
             </Button>
@@ -307,7 +307,7 @@ export function Header() {
                           locale === "kan" ? "text-lg" : "text-base"
                         } font-semibold leading-7 transition-colors hover:bg-white/10 ${
                           pathname === item.href
-                            ? "text-yellow-400"
+                            ? "text-[#009BDE]"
                             : "text-white"
                         }`}
                         onClick={() => setMobileMenuOpen(false)}
@@ -323,7 +323,7 @@ export function Header() {
                     {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
                       <Button
                         variant="outline"
-                        className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+                        className="w-full border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
                       >
                         {t("home.cta.button")}
                       </Button>

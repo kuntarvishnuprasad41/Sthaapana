@@ -111,7 +111,7 @@ export default function HomePage() {
   //         <AnimatedContainer animation="scale-in" delay={600}>
   //           <Button
   //             size="lg"
-  //             className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 tfont-normal font-serif"
+  //             className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 tfont-normal font-serif"
   //           >
   //             {t("home.hero.cta")}
   //             <ArrowRight className="ml-2 h-5 w-5" />
@@ -221,7 +221,7 @@ export default function HomePage() {
   //                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
   //                 </div>
   //                 <div className="absolute bottom-0 left-0 right-0 p-6">
-  //                   <h3 className="text-xl font-normal text-white group-hover:text-yellow-400 transition-colors">
+  //                   <h3 className="text-xl font-normal text-white group-hover:text-[#009BDE] transition-colors">
   //                     {category.name}
   //                   </h3>
   //                 </div>
@@ -267,7 +267,7 @@ export default function HomePage() {
   //                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
   //               </div>
   //               <div className="absolute bottom-0 left-0 right-0 p-4">
-  //                 <h3 className="tfont-normal text-white group-hover:text-yellow-400 transition-colors">
+  //                 <h3 className="tfont-normal text-white group-hover:text-[#009BDE] transition-colors">
   //                   {project.name}
   //                 </h3>
   //                 <p className="text-sm text-gray-300">{project.location}</p>
@@ -282,7 +282,7 @@ export default function HomePage() {
   //             <Button
   //               variant="outline"
   //               size="lg"
-  //               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+  //               className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
   //             >
   //               {t("projects.hero.title")}
   //               <ArrowRight className="ml-2 h-5 w-5" />
@@ -319,7 +319,7 @@ export default function HomePage() {
   //                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
   //               </div>
   //               <div className="absolute bottom-0 left-0 right-0 p-4">
-  //                 <h3 className="tfont-normal text-white group-hover:text-yellow-400 transition-colors">
+  //                 <h3 className="tfont-normal text-white group-hover:text-[#009BDE] transition-colors">
   //                   {project.name}
   //                 </h3>
   //                 <p className="text-sm text-gray-300">{project.location}</p>
@@ -334,7 +334,7 @@ export default function HomePage() {
   //             <Button
   //               variant="outline"
   //               size="lg"
-  //               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+  //               className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
   //             >
   //               {t("projects.hero.title")}
   //               <ArrowRight className="ml-2 h-5 w-5" />
@@ -377,8 +377,8 @@ export default function HomePage() {
   //                   delay={300 + index * 100}
   //                 >
   //                   <div className="flex items-start space-x-4">
-  //                     <div className="flex-shrink-0 w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center">
-  //                       <feature.icon className="h-6 w-6 text-yellow-400" />
+  //                     <div className="flex-shrink-0 w-12 h-12 bg-[#009BDE]/10 rounded-lg flex items-center justify-center">
+  //                       <feature.icon className="h-6 w-6 text-[#009BDE]" />
   //                     </div>
   //                     <div>
   //                       <h4 className="tfont-normal text-white mb-2">
@@ -411,7 +411,7 @@ export default function HomePage() {
   //         <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
   //           <Button
   //             size="lg"
-  //             className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 tfont-normal"
+  //             className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 tfont-normal"
   //           >
   //             <ArrowRight className="mr-2 h-5 w-5" />
   //             {t("home.cta.button")}
@@ -472,7 +472,7 @@ export default function HomePage() {
           <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal font-serif"
+              className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 font-normal font-serif"
               // onClick={() => router.push("/projects")}
             >
               {t("home.hero.cta")}
@@ -555,7 +555,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-normal text-white group-hover:text-yellow-400 transition-colors">
+                    <h3 className="text-xl font-normal text-white group-hover:text-[#009BDE] transition-colors">
                       {category.name}
                     </h3>
                   </div>
@@ -602,7 +602,7 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-white group-hover:text-yellow-400 transition-colors">
+                  <h3 className="text-white group-hover:text-[#009BDE] transition-colors">
                     {project.name}
                   </h3>
                   <p className="text-sm text-gray-300">{project.location}</p>
@@ -617,7 +617,7 @@ export default function HomePage() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black"
               >
                 {t("projects.hero.title")}
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -642,7 +642,7 @@ export default function HomePage() {
           <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal"
+              className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 font-normal"
             >
               <ArrowRight className="mr-2 h-5 w-5" />
               {t("home.cta.button")}

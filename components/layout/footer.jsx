@@ -28,7 +28,7 @@ export function Footer() {
   const { t, locale } = useTranslation();
 
   return (
-    <footer className="bg-gradient-to-r from-yellow-400 to-yellow-600">
+    <footer className="bg-gradient-to-r from-[#156182] to-[#2f256b]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         {/* Social links */}
         <div className="flex justify-center space-x-6 md:order-2">

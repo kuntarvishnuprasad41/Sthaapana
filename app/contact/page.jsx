@@ -105,7 +105,7 @@ export default function ContactPage({ locale }) {
         <div className="absolute inset-0 bg-[url('/elegant-black-leather-chairs-luxury-meeting.png')] bg-cover bg-center opacity-40" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            {/* <p className="text-yellow-400 font-normal text-lg mb-4">
+            {/* <p className="text-[#009BDE] font-normal text-lg mb-4">
               {t("contact.hero.subtitle")}
             </p> */}
           </AnimatedContainer>
@@ -168,15 +168,15 @@ export default function ContactPage({ locale }) {
                     delay={index * 100}
                   >
                     <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center">
-                        <info.icon className="h-6 w-6 text-yellow-400" />
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#009BDE]/10 rounded-lg flex items-center justify-center">
+                        <info.icon className="h-6 w-6 text-[#009BDE]" />
                       </div>
                       <div>
                         <h4 className="text-lg font-normal text-white mb-2">
                           {info.title}
                         </h4>
                         <p className="text-gray-400 mb-2">{info.description}</p>
-                        <p className="text-yellow-400 font-medium">
+                        <p className="text-[#009BDE] font-medium">
                           {info.title !== "اتصل بنا" ? (
                             info.details
                           ) : (
@@ -224,7 +224,7 @@ export default function ContactPage({ locale }) {
           </div>
           <div className="bg-gray-800 rounded-lg h-96 flex items-center justify-center">
             <div className="text-center">
-              <MapPin className="h-16 w-16 text-yellow-400 mx-auto mb-4" />
+              <MapPin className="h-16 w-16 text-[#009BDE] mx-auto mb-4" />
               <Text className="text-gray-400">
                 {t("contact.map.comingSoon")}
               </Text>
@@ -250,7 +250,7 @@ export default function ContactPage({ locale }) {
           </Text>
           <Button
             size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-normal"
+            className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 text-lg font-normal"
           >
             <ArrowRight className="mr-2 h-5 w-5" />
             {t("contact.cta.button")}

@@ -73,7 +73,7 @@ export default function ProjectsCarouselSection({
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition-colors">
+                    <h3 className="text-xl font-semibold text-white group-hover:text-[#009BDE] transition-colors">
                       {project.name}
                     </h3>
                     <p className="text-sm text-gray-300">{project.location}</p>
@@ -112,7 +112,7 @@ export default function ProjectsCarouselSection({
               className={cn(
                 "w-2 h-2 rounded-full transition-all duration-300",
                 index === selectedIndex
-                  ? "bg-yellow-400 w-8"
+                  ? "bg-[#009BDE] w-8"
                   : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
               )}
               onClick={() => emblaApi?.scrollTo(index)}
@@ -128,7 +128,7 @@ export default function ProjectsCarouselSection({
             <Button
               variant="outline"
               size="lg"
-              className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
+              className="border-[#009BDE] text-[#009BDE] hover:bg-[#009BDE] hover:text-black bg-transparent"
             >
               {t("projects.hero.title")}
               <ArrowRight className="ml-2 h-5 w-5" />

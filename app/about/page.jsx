@@ -58,7 +58,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[url('/luxury-furniture-craftsmanship-workshop.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
-            {/* <p className="text-yellow-400 font-semibold text-lg mb-4">
+            {/* <p className="text-[#009BDE] font-semibold text-lg mb-4">
               {t("about.hero.tagline")}
             </p> */}
           </AnimatedContainer>
@@ -257,15 +257,15 @@ export default function AboutPage() {
               animation="scale-in"
               delay={index * 100}
             >
-              <div className="bg-black/50 border border-gray-700 rounded-lg p-8 hover:border-yellow-400/50 transition-all duration-300 group">
+              <div className="bg-black/50 border border-gray-700 rounded-lg p-8 hover:border-[#009BDE]/50 transition-all duration-300 group">
                 <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-yellow-400/10 rounded-lg flex items-center justify-center group-hover:bg-yellow-400/20 transition-colors">
-                    <value.icon className="h-6 w-6 text-yellow-400" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#009BDE]/10 rounded-lg flex items-center justify-center group-hover:bg-[#009BDE]/20 transition-colors">
+                    <value.icon className="h-6 w-6 text-[#009BDE]" />
                   </div>
                   <div>
                     <Heading
                       level={4}
-                      className="mb-4 group-hover:text-yellow-400 transition-colors"
+                      className="mb-4 group-hover:text-[#009BDE] transition-colors"
                     >
                       {value.title}
                     </Heading>
@@ -296,7 +296,7 @@ export default function AboutPage() {
             <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
               <Button
                 size="lg"
-                className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"
+                className="bg-[#009BDE] text-black hover:bg-[#009BDE] px-8 py-4 text-lg font-semibold"
               >
                 <ArrowRight className="mr-2 h-5 w-5" />
                 {t("about.cta.button")}

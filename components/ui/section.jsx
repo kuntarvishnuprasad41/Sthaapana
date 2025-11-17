@@ -17,7 +17,7 @@ export function SectionHeader({
       <h2 className="text-4xl md:text-6xl font-normal text-white mb-6 animate-slide-up font-serif">
         {title}{" "}
         {subtitle?.trim() && (
-          <p className="text-yellow-400 font-normal  animate-fade-in font-serif">
+          <p className="text-[#009BDE] font-normal  animate-fade-in font-serif">
             {subtitle}
           </p>
         )}
