@@ -28,7 +28,7 @@ export function Footer() {
   const { t, locale } = useTranslation();
 
   return (
-    <footer className="bg-gradient-to-r from-[#156182] to-[#2f256b]">
+    <footer className="bg-gradient-to-r from-[#01131b] to-[#0b0720]">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         {/* Social links */}
         <div className="flex justify-center space-x-6 md:order-2">
@@ -36,7 +36,7 @@ export function Footer() {
             <Link
               key={item.name}
               href={withLocalePath(locale, item.href)}
-              className="text-black hover:text-gray-700 transition-colors"
+              className="text-white hover:text-white transition-colors"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -53,14 +53,14 @@ export function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-black hover:text-gray-700 transition-colors"
+                  className="text-white hover:text-gray-700 transition-colors"
                 >
                   {t(`footer.navigation.${item.name}`)}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="mt-4 flex flex-col md:flex-row md:items-center md:justify-between text-sm text-black">
+          <div className="mt-4 flex flex-col md:flex-row md:items-center md:justify-between text-sm text-white">
             <Link
               href="/privacy"
               className="hover:text-gray-700 transition-colors"

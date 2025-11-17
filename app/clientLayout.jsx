@@ -76,13 +76,13 @@ export default function ClientLayout({ children }) {
       className={`${ivyOraDisplay.variable} ${haskoy.variable} antialiased`}
     >
       <head>
-        <title>Sthaapana - Luxury Furniture</title>
+        <title>Sthaapana - Luxury Buildings</title>
         <head>
           <link rel="icon" href="/logo.svg" />
         </head>
         <meta
           name="description"
-          content="Luxury furniture, crafted for every lifestyle"
+          content="Luxury Buildings, crafted for every lifestyle"
         />
         <meta name="generator" content="v0.app" />
       </head>

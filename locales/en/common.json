@@ -7,18 +7,18 @@
   },
   "home": {
     "hero": {
-      "title": "Luxury furniture, crafted",
+      "title": "Luxury Building, crafted",
       "subtitle": "for every lifestyle",
       "description": "From bespoke ready-made collections to bespoke creations, Sthaapana brings together comfort, style and quality into every home and project.",
       "cta": "Explore Our Collections"
     },
     "lifestyle": {
-      "title": "More than furniture.",
+      "title": "More than Building.",
       "subtitle": "A lifestyle upgrade.",
-      "description": "At Sthaapana, we believe that furniture should tell a story. Whether you're looking for a statement piece that defines your space, or a complete collection that transforms your home, we're here to help you create spaces that inspire."
+      "description": "At Sthaapana, we believe that Building should tell a story. Whether you're looking for a statement piece that defines your space, or a complete collection that transforms your home, we're here to help you create spaces that inspire."
     },
     "rooms": {
-      "title": "Furniture for every room,",
+      "title": "Building for every room,",
       "subtitle": "every story",
       "description": "From the living room where families gather to the bedroom where dreams unfold, our collections are crafted to elevate every moment while maintaining our standards of comfort and quality.",
       "categories": {
@@ -33,7 +33,7 @@
     "shopping": {
       "title": "Shopping",
       "subtitle": "reimagined",
-      "description": "Buying furniture with Sthaapana is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
+      "description": "Buying Building with Sthaapana is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
     },
     "features": {
       "visualize": {
@@ -42,7 +42,7 @@
       },
       "guided": {
         "title": "Guided by experts",
-        "description": "Our design team walks you through curated spaces, offering insights that make choosing the right furniture easier and more fun."
+        "description": "Our design team walks you through curated spaces, offering insights that make choosing the right Building easier and more fun."
       },
       "custom": {
         "title": "Curated & custom options",
@@ -64,20 +64,20 @@
   "about": {
     "hero": {
       "tagline": "About Us",
-      "heading1": "Crafting furniture that",
+      "heading1": "Crafting Building that",
       "heading2": "inspires everyday living",
-      "description": "Sthaapana creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style."
+      "description": "Sthaapana creates Building that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style."
     },
     "founder": {
       "title1": "CEO's",
       "title2": "Message",
-      "message": "“With a shared vision to redefine furniture experiences, we built Sthaapana on trust, creativity, and uncompromising quality. Our journey is driven by a passion for design, a dedication to excellence, and a commitment to creating furniture that elevates lifestyles.”",
+      "message": "“With a shared vision to redefine Building experiences, we built Sthaapana on trust, creativity, and uncompromising quality. Our journey is driven by a passion for design, a dedication to excellence, and a commitment to creating Building that elevates lifestyles.”",
       "signature": "Chief Executive Officer"
     },
     "companyInfo": {
       "story": {
         "title": "Our story",
-        "description": "Blending craftsmanship and creativity to craft timeless, meaningful furniture."
+        "description": "Blending craftsmanship and creativity to craft timeless, meaningful Building."
       },
       "mission": {
         "title": "Our mission",
@@ -91,7 +91,7 @@
     "beginning": {
       "title1": "The beginning",
       "title2": "of Sthaapana",
-      "description": "Furniture should inspire design, not just occupy space. Sthaapana was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward."
+      "description": "Building should inspire design, not just occupy space. Sthaapana was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward."
     },
     "drives": {
       "title1": "What drives us",
@@ -101,7 +101,7 @@
     "future": {
       "title1": "Where we're",
       "title2": "headed",
-      "description": "Our goal is bold: to be among the top five furniture brands in the region by building design trends and shaping extraordinary living experiences."
+      "description": "Our goal is bold: to be among the top five Building brands in the region by building design trends and shaping extraordinary living experiences."
     },
     "valuesHeader": {
       "title": "Our values",
@@ -138,14 +138,14 @@
       "tagline": "Projects",
       "heading1": "Trusted to transform",
       "heading2": "spaces across the region",
-      "description": "From luxury hotels to universities, hospitals, and iconic developments, Sthaapana delivers furniture solutions that combine elegance, durability, and design excellence."
+      "description": "From luxury hotels to universities, hospitals, and iconic developments, Sthaapana delivers Building solutions that combine elegance, durability, and design excellence."
     },
     "items": {
       "bananHotelSuits": {
         "title": "Banan Hotel Suites",
         "category": "Hospitality",
         "location": "Tabuk, KSA",
-        "description": "Furnishing 150 luxury suites with bespoke furniture that blends comfort and elegance, creating a memorable guest experience."
+        "description": "Furnishing 150 luxury suites with bespoke Building that blends comfort and elegance, creating a memorable guest experience."
       }
     },
     "categories": {
@@ -170,12 +170,12 @@
       "subtitle": "Sthaapana Experience",
       "title1": "Shopping reimagined",
       "title2": "The Sthaapana experience",
-      "description": "Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
+      "description": "Discover how Building shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
     },
     "gallery": {
       "title1": "A gallery,",
       "title2": "not a store",
-      "description": "Sthaapana showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
+      "description": "Sthaapana showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see Building in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
     },
     "features": {
       "immersive": {
@@ -192,7 +192,7 @@
       },
       "confidence": {
         "title": "Confidence in Choice",
-        "description": "Experience furniture in context, making decisions with complete confidence and joy."
+        "description": "Experience Building in context, making decisions with complete confidence and joy."
       }
     },
     "visit": {
@@ -225,18 +225,18 @@
     },
     "visit": {
       "title": "Visit Our Showrooms",
-      "description": "Experience our furniture collections in person across multiple locations in the region.",
-      "details": "Riyadh • Jeddah • Tabuk • Najran"
+      "description": "Experience our Building collections in person across multiple locations in the region.",
+      "details": "Mysuru, India"
     },
     "call": {
       "title": "Call Us",
       "description": "Speak directly with our design consultants for personalized assistance.",
-      "details": "+966581118984"
+      "details": "+PhNumber"
     },
     "email": {
       "title": "Email Us",
       "description": "Send us your inquiries and we'll respond within 24 hours.",
-      "details": "sales@Sthaapanafty.com"
+      "details": "EmailId"
     },
     "hours": {
       "title": "Business Hours",
@@ -265,7 +265,7 @@
     "map": {
       "title1": "Visit our",
       "title2": "showrooms",
-      "description": "Experience our furniture collections in person at our showrooms across the region. Each location offers the full Sthaapana gallery experience.",
+      "description": "Experience our Building collections in person at our showrooms across the region. Each location offers the full Sthaapana gallery experience.",
       "comingSoon": "Interactive map coming soon",
       "locations": "Visit our showrooms in Riyadh, Jeddah, Tabuk, and Najran"
     },
