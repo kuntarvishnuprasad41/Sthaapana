@@ -279,7 +279,7 @@ export function Header() {
                 : "translate-x-full bg-black"
             }`}
           >
-            <div className="bg-black w-full h-full flex flex-col">
+            <div className="bg-black w-full h-full flex flex-col ">
               {/* Header */}
               <div className="flex items-center justify-between px-6 py-6 bg-black">
                 <Link href={locale === "kan" ? "/kan" : "/"}>
@@ -295,7 +295,7 @@ export function Header() {
               </div>
 
               {/* Nav items + CTA */}
-              <div className="mt-6 flex-1 px-6 flow-root bg-black">
+              <div className=" flex-1 px-6 flow-root bg-black ">
                 <div className="-my-6 divide-y divide-white/10 flex flex-col h-full">
                   {/* Navigation links */}
                   <div className="space-y-2 py-6 flex-1">
