@@ -1,7 +1,7 @@
 {
   "nav": {
     "aboutUs": "About Us",
-    "riyashExperience": "Riyash Experience",
+    "SthaapanaExperience": "Sthaapana Experience",
     "ourProjects": "Our Projects",
     "contactUs": "Contact Us"
   },
@@ -9,13 +9,13 @@
     "hero": {
       "title": "Luxury furniture, crafted",
       "subtitle": "for every lifestyle",
-      "description": "From bespoke ready-made collections to bespoke creations, Riyash brings together comfort, style and quality into every home and project.",
+      "description": "From bespoke ready-made collections to bespoke creations, Sthaapana brings together comfort, style and quality into every home and project.",
       "cta": "Explore Our Collections"
     },
     "lifestyle": {
       "title": "More than furniture.",
       "subtitle": "A lifestyle upgrade.",
-      "description": "At Riyash, we believe that furniture should tell a story. Whether you're looking for a statement piece that defines your space, or a complete collection that transforms your home, we're here to help you create spaces that inspire."
+      "description": "At Sthaapana, we believe that furniture should tell a story. Whether you're looking for a statement piece that defines your space, or a complete collection that transforms your home, we're here to help you create spaces that inspire."
     },
     "rooms": {
       "title": "Furniture for every room,",
@@ -33,7 +33,7 @@
     "shopping": {
       "title": "Shopping",
       "subtitle": "reimagined",
-      "description": "Buying furniture with Riyash is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
+      "description": "Buying furniture with Sthaapana is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
     },
     "features": {
       "visualize": {
@@ -52,12 +52,12 @@
     "projects": {
       "title": "Featured",
       "subtitle": "projects",
-      "description": "Our work speaks for itself. From luxury hotels to educational institutions and government projects, Riyash has left its mark on spaces across the region with our commitment to quality."
+      "description": "Our work speaks for itself. From luxury hotels to educational institutions and government projects, Sthaapana has left its mark on spaces across the region with our commitment to quality."
     },
     "cta": {
       "title": "LET'S DESIGN YOUR",
       "subtitle": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -66,12 +66,12 @@
       "tagline": "About Us",
       "heading1": "Crafting furniture that",
       "heading2": "inspires everyday living",
-      "description": "Riyash creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style."
+      "description": "Sthaapana creates furniture that blends timeless craftsmanship and modern design, elevating every space with pieces that offer elegance, comfort, and style."
     },
     "founder": {
       "title1": "CEO's",
       "title2": "Message",
-      "message": "“With a shared vision to redefine furniture experiences, we built Riyash on trust, creativity, and uncompromising quality. Our journey is driven by a passion for design, a dedication to excellence, and a commitment to creating furniture that elevates lifestyles.”",
+      "message": "“With a shared vision to redefine furniture experiences, we built Sthaapana on trust, creativity, and uncompromising quality. Our journey is driven by a passion for design, a dedication to excellence, and a commitment to creating furniture that elevates lifestyles.”",
       "signature": "Chief Executive Officer"
     },
     "companyInfo": {
@@ -90,13 +90,13 @@
     },
     "beginning": {
       "title1": "The beginning",
-      "title2": "of Riyash",
-      "description": "Furniture should inspire design, not just occupy space. Riyash was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward."
+      "title2": "of Sthaapana",
+      "description": "Furniture should inspire design, not just occupy space. Sthaapana was founded to merge craftsmanship and creativity, creating timeless designs that feel personal and trend-forward."
     },
     "drives": {
       "title1": "What drives us",
       "title2": "forward",
-      "description": "We believe luxury should be within reach. Every Riyash piece—ready-made or custom—is built to the highest standards."
+      "description": "We believe luxury should be within reach. Every Sthaapana piece—ready-made or custom—is built to the highest standards."
     },
     "future": {
       "title1": "Where we're",
@@ -110,7 +110,7 @@
     "values": {
       "quality": {
         "title": "Quality first",
-        "description": "Every Riyash piece is crafted with uncompromising standards of excellence."
+        "description": "Every Sthaapana piece is crafted with uncompromising standards of excellence."
       },
       "customer": {
         "title": "Customer first",
@@ -128,7 +128,7 @@
     "cta": {
       "heading1": "LET'S DESIGN YOUR",
       "heading2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -138,7 +138,7 @@
       "tagline": "Projects",
       "heading1": "Trusted to transform",
       "heading2": "spaces across the region",
-      "description": "From luxury hotels to universities, hospitals, and iconic developments, Riyash delivers furniture solutions that combine elegance, durability, and design excellence."
+      "description": "From luxury hotels to universities, hospitals, and iconic developments, Sthaapana delivers furniture solutions that combine elegance, durability, and design excellence."
     },
     "items": {
       "bananHotelSuits": {
@@ -161,21 +161,21 @@
     "cta": {
       "heading1": "LET'S DESIGN YOUR",
       "heading2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
   "experience": {
     "hero": {
-      "subtitle": "Riyash Experience",
+      "subtitle": "Sthaapana Experience",
       "title1": "Shopping reimagined",
-      "title2": "The Riyash experience",
+      "title2": "The Sthaapana experience",
       "description": "Discover how furniture shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
     },
     "gallery": {
       "title1": "A gallery,",
       "title2": "not a store",
-      "description": "Riyash showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
+      "description": "Sthaapana showrooms are curated like galleries, not stores. Each room is styled as a complete concept, allowing you to see furniture in its natural setting—living, dining, bedroom, office, or hospitality. Instead of imagining pieces in isolation, you experience how they come together in harmony."
     },
     "features": {
       "immersive": {
@@ -198,7 +198,7 @@
     "visit": {
       "locations": {
         "title": "Multiple Locations",
-        "description": "Visit our showrooms across the region to experience the Riyash difference firsthand."
+        "description": "Visit our showrooms across the region to experience the Sthaapana difference firsthand."
       },
       "schedule": {
         "title": "Flexible Scheduling",
@@ -212,7 +212,7 @@
     "cta": {
       "title1": "LET'S DESIGN YOUR",
       "title2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -236,7 +236,7 @@
     "email": {
       "title": "Email Us",
       "description": "Send us your inquiries and we'll respond within 24 hours.",
-      "details": "sales@riyashfty.com"
+      "details": "sales@Sthaapanafty.com"
     },
     "hours": {
       "title": "Business Hours",
@@ -259,27 +259,27 @@
       "messagePlaceholder": "Enter your message",
       "submit": "Submit",
       "submitting": "Submitting...",
-      "privacy": "By pressing the submit button, I agree to Riyash contacting me by email. I also understand that any information I've shared in this form is subject to Riyash privacy policy.",
+      "privacy": "By pressing the submit button, I agree to Sthaapana contacting me by email. I also understand that any information I've shared in this form is subject to Sthaapana privacy policy.",
       "success": "Thank you for your message! We'll get back to you soon."
     },
     "map": {
       "title1": "Visit our",
       "title2": "showrooms",
-      "description": "Experience our furniture collections in person at our showrooms across the region. Each location offers the full Riyash gallery experience.",
+      "description": "Experience our furniture collections in person at our showrooms across the region. Each location offers the full Sthaapana gallery experience.",
       "comingSoon": "Interactive map coming soon",
       "locations": "Visit our showrooms in Riyadh, Jeddah, Tabuk, and Najran"
     },
     "cta": {
       "title1": "LET'S DESIGN YOUR",
       "title2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Riyash is here to guide, create, and deliver.",
+      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
   "footer": {
     "navigation": {
       "about": "About Us",
-      "experience": "Riyash Experience",
+      "experience": "Sthaapana Experience",
       "projects": "Our Projects",
       "contact": "Contact Us"
     },

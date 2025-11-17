@@ -67,7 +67,9 @@ export function Footer() {
             >
               {t("footer.privacy")}
             </Link>
-            <p className="mt-2 md:mt-0">© Riyash 2025. {t("footer.rights")}</p>
+            <p className="mt-2 md:mt-0">
+              © Sthaapana 2025. {t("footer.rights")}
+            </p>
           </div>
         </div>
       </div>

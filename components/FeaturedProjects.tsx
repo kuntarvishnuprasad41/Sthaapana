@@ -124,7 +124,7 @@ export default function ProjectsCarouselSection({
       {/* View More Button */}
       <AnimatedContainer animation="fade-in" delay={600}>
         <div className="text-center mt-12">
-          <Link href={locale === "ar" ? "/ar/projects" : "/projects"}>
+          <Link href={locale === "kan" ? "/kan/projects" : "/projects"}>
             <Button
               variant="outline"
               size="lg"

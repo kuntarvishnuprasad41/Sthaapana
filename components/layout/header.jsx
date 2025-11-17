@@ -17,22 +17,22 @@
 //   const navigation = [
 //     {
 //       name: t("nav.aboutUs"),
-//       href: locale === "ar" ? "/ar/about" : "/about",
+//       href: locale === "kan" ? "/kan/about" : "/about",
 //       key: "nav.aboutUs",
 //     },
 //     {
-//       name: t("nav.riyashExperience"),
-//       href: locale === "ar" ? "/ar/experience" : "/experience",
-//       key: "nav.riyashExperience",
+//       name: t("nav.SthaapanaExperience"),
+//       href: locale === "kan" ? "/kan/experience" : "/experience",
+//       key: "nav.SthaapanaExperience",
 //     },
 //     {
 //       name: t("nav.ourProjects"),
-//       href: locale === "ar" ? "/ar/projects" : "/projects",
+//       href: locale === "kan" ? "/kan/projects" : "/projects",
 //       key: "nav.ourProjects",
 //     },
 //     {
 //       name: t("nav.contactUs"),
-//       href: locale === "ar" ? "/ar/contact" : "/contact",
+//       href: locale === "kan" ? "/kan/contact" : "/contact",
 //       key: "nav.contactUs",
 //     },
 //   ];
@@ -45,7 +45,7 @@
 //       >
 //         {/* Logo */}
 //         <div className="flex lg:flex-1">
-//           <Link href={locale === "ar" ? "/ar" : "/"}>
+//           <Link href={locale === "kan" ? "/kan" : "/"}>
 //             <Logo />
 //           </Link>
 //         </div>
@@ -79,7 +79,7 @@
 //         {/* Desktop right side */}
 //         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
 //           <LanguageSwitcher />
-//           {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+//           {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
 //             <Button
 //               variant="outline"
 //               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
@@ -110,7 +110,7 @@
 //             <div className="bg-black w-full h-full flex flex-col">
 //               {/* Header */}
 //               <div className="flex items-center justify-between px-6 py-6 bg-black">
-//                 <Link href={locale === "ar" ? "/ar" : "/"}>
+//                 <Link href={locale === "kan" ? "/kan" : "/"}>
 //                   <Logo />
 //                 </Link>
 //                 <Button
@@ -146,7 +146,7 @@
 //                   {/* Language switcher + button */}
 //                   <div className="py-6 space-y-4 pb-8">
 //                     <LanguageSwitcher />
-//                     {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+//                     {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
 //                       <Button
 //                         variant="outline"
 //                         className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
@@ -183,22 +183,22 @@ export function Header() {
   const navigation = [
     {
       name: t("nav.aboutUs"),
-      href: locale === "ar" ? "/ar/about" : "/about",
+      href: locale === "kan" ? "/kan/about" : "/about",
       key: "nav.aboutUs",
     },
     {
-      name: t("nav.riyashExperience"),
-      href: locale === "ar" ? "/ar/experience" : "/experience",
-      key: "nav.riyashExperience",
+      name: t("nav.SthaapanaExperience"),
+      href: locale === "kan" ? "/kan/experience" : "/experience",
+      key: "nav.SthaapanaExperience",
     },
     {
       name: t("nav.ourProjects"),
-      href: locale === "ar" ? "/ar/projects" : "/projects",
+      href: locale === "kan" ? "/kan/projects" : "/projects",
       key: "nav.ourProjects",
     },
     {
       name: t("nav.contactUs"),
-      href: locale === "ar" ? "/ar/contact" : "/contact",
+      href: locale === "kan" ? "/kan/contact" : "/contact",
       key: "nav.contactUs",
     },
   ];
@@ -211,7 +211,7 @@ export function Header() {
       >
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <Link href={locale === "ar" ? "/ar" : "/"}>
+          <Link href={locale === "kan" ? "/kan" : "/"}>
             <Logo />
           </Link>
         </div>
@@ -230,10 +230,10 @@ export function Header() {
         {/* Desktop navigation */}
         <div
           className={`hidden lg:flex ${
-            locale === "ar" ? "lg:gap-x-16 text-lg" : "lg:gap-x-12 text-sm"
+            locale === "kan" ? "lg:gap-x-16 text-lg" : "lg:gap-x-12 text-sm"
           } font-semibold leading-6`}
           // Uncomment this line if you want RTL order for Arabic
-          // style={{ direction: locale === "ar" ? "rtl" : "ltr" }}
+          // style={{ direction: locale === "kan" ? "rtl" : "ltr" }}
         >
           {navigation.map((item) => (
             <Link
@@ -251,7 +251,7 @@ export function Header() {
         {/* Desktop right side */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
           <LanguageSwitcher />
-          {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+          {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               variant="outline"
               className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"
@@ -282,7 +282,7 @@ export function Header() {
             <div className="bg-black w-full h-full flex flex-col">
               {/* Header */}
               <div className="flex items-center justify-between px-6 py-6 bg-black">
-                <Link href={locale === "ar" ? "/ar" : "/"}>
+                <Link href={locale === "kan" ? "/kan" : "/"}>
                   <Logo />
                 </Link>
                 <Button
@@ -304,7 +304,7 @@ export function Header() {
                         key={item.key}
                         href={item.href}
                         className={`block rounded-lg px-3 py-2 ${
-                          locale === "ar" ? "text-lg" : "text-base"
+                          locale === "kan" ? "text-lg" : "text-base"
                         } font-semibold leading-7 transition-colors hover:bg-white/10 ${
                           pathname === item.href
                             ? "text-yellow-400"
@@ -320,7 +320,7 @@ export function Header() {
                   {/* Language switcher + button */}
                   <div className="py-6 space-y-4 pb-8">
                     <LanguageSwitcher />
-                    {/* <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+                    {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
                       <Button
                         variant="outline"
                         className="w-full border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black bg-transparent"

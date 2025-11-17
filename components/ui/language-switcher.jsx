@@ -1,32 +1,32 @@
-"use client"
+"use client";
 
-import { useRouter, usePathname } from "next/navigation"
-import { Button } from "./button"
-import { Globe } from "lucide-react"
-import { useState } from "react"
+import { useRouter, usePathname } from "next/navigation";
+import { Button } from "./button";
+import { Globe } from "lucide-react";
+import { useState } from "react";
 
 export function LanguageSwitcher() {
-  const router = useRouter()
-  const pathname = usePathname()
-  const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   // Extract current locale from pathname
-  const currentLocale = pathname.startsWith("/ar") ? "ar" : "en"
+  const currentLocale = pathname.startsWith("/kan") ? "kan" : "en";
 
   const switchLanguage = (locale) => {
-    let newPath = pathname
+    let newPath = pathname;
 
-    if (currentLocale === "ar" && locale === "en") {
+    if (currentLocale === "kan" && locale === "en") {
       // Remove /ar prefix
-      newPath = pathname.replace("/ar", "") || "/"
-    } else if (currentLocale === "en" && locale === "ar") {
+      newPath = pathname.replace("/kan", "") || "/";
+    } else if (currentLocale === "en" && locale === "kan") {
       // Add /ar prefix
-      newPath = `/ar${pathname}`
+      newPath = `/kan${pathname}`;
     }
 
-    router.push(newPath)
-    setIsOpen(false)
-  }
+    router.push(newPath);
+    setIsOpen(false);
+  };
 
   return (
     <div className="relative">
@@ -37,7 +37,9 @@ export function LanguageSwitcher() {
         className="text-white hover:text-yellow-400 flex items-center gap-2"
       >
         <Globe className="h-4 w-4" />
-        <span className="text-sm font-medium">{currentLocale === "ar" ? "العربية" : "English"}</span>
+        <span className="text-sm font-medium">
+          {currentLocale === "kan" ? "Kannada" : "English"}
+        </span>
       </Button>
 
       {isOpen && (
@@ -52,16 +54,16 @@ export function LanguageSwitcher() {
               English
             </button>
             <button
-              onClick={() => switchLanguage("ar")}
+              onClick={() => switchLanguage("kan")}
               className={`block w-full text-left px-4 py-2 text-sm hover:bg-white/10 transition-colors ${
-                currentLocale === "ar" ? "text-yellow-400" : "text-white"
+                currentLocale === "kan" ? "text-yellow-400" : "text-white"
               }`}
             >
-              العربية
+              Kannada
             </button>
           </div>
         </div>
       )}
     </div>
-  )
+  );
 }

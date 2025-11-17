@@ -141,7 +141,7 @@ export default function ProjectsPage() {
             <Text
               size="lg"
               style={
-                locale === "ar"
+                locale === "kan"
                   ? {
                       fontSize: "1.5rem",
                       lineHeight: "2.25rem",
@@ -233,7 +233,7 @@ export default function ProjectsPage() {
           <Text size="lg" className="mb-12 max-w-2xl mx-auto">
             {t("projects.cta.description")}
           </Text>
-          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+          <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
               className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 text-lg font-semibold"

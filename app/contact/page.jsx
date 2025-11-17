@@ -135,7 +135,7 @@ export default function ContactPage({ locale }) {
             <Text
               size="lg"
               style={
-                locale === "ar"
+                locale === "kan"
                   ? {
                       fontSize: "1.5rem",
                       lineHeight: "2.25rem",

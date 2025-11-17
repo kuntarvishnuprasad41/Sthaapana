@@ -44,7 +44,7 @@ export async function POST(req) {
                 to: [{
                     email: "ecohomes.sa@gmail.com"
                 }],
-                subject: `New Enquiry from ${data.name} For Riyash`,
+                subject: `New Enquiry from ${data.name} For Sthaapana`,
                 text: `
                 Name: ${data.name}
                 Email: ${data.email}
@@ -55,7 +55,7 @@ export async function POST(req) {
                 html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eaeaea; border-radius: 8px; overflow: hidden;">
                     <div style="background-color: #4CAF50; color: white; padding: 16px; text-align: center;">
-                    <h2 style="margin: 0;">🌱 New Enquiry Received For Riyash</h2>
+                    <h2 style="margin: 0;">🌱 New Enquiry Received For Sthaapana</h2>
                     </div>
                     <div style="padding: 20px; background-color: #f9f9f9;">
                     <p style="font-size: 16px; margin-bottom: 20px;">You have received a new enquiry. Here are the details:</p>
@@ -83,7 +83,7 @@ export async function POST(req) {
                     </table>
                     </div>
                     <div style="background-color: #4CAF50; color: white; text-align: center; padding: 12px; font-size: 14px;">
-                    <p style="margin: 0;">Riyash • Enquiry Notification</p>
+                    <p style="margin: 0;">Sthaapana • Enquiry Notification</p>
                     </div>
                 </div>
                 `,

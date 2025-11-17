@@ -65,7 +65,7 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="space-y-4"
-      dir={locale === "ar" ? "rtl" : "ltr"} // auto direction
+      dir={locale === "kan" ? "rtl" : "ltr"} // auto direction
     >
       {/* Honeypot (hidden) */}
       <input

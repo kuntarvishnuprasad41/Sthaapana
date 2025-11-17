@@ -236,7 +236,7 @@ export default function HomePage() {
   //       title={"Shopping "}
   //       subtitle={"reimagined"}
   //       description={
-  //         "Buying furniture with Riyash is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With guided tours, you’ll see how designs come to life, helping you choose with confidence and joy."
+  //         "Buying furniture with Sthaapana is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With guided tours, you’ll see how designs come to life, helping you choose with confidence and joy."
   //       }
   //       className="mb-16"
   //     />
@@ -278,7 +278,7 @@ export default function HomePage() {
   //       </div>
   //       <AnimatedContainer animation="fade-in" delay={600}>
   //         <div className="text-center mt-12">
-  //           <Link href={locale === "ar" ? "/ar/projects" : "/projects"}>
+  //           <Link href={locale === "kan" ? "/kan/projects" : "/projects"}>
   //             <Button
   //               variant="outline"
   //               size="lg"
@@ -330,7 +330,7 @@ export default function HomePage() {
   //       </div>
   //       <AnimatedContainer animation="fade-in" delay={600}>
   //         <div className="text-center mt-12">
-  //           <Link href={locale === "ar" ? "/ar/projects" : "/projects"}>
+  //           <Link href={locale === "kan" ? "/kan/projects" : "/projects"}>
   //             <Button
   //               variant="outline"
   //               size="lg"
@@ -408,7 +408,7 @@ export default function HomePage() {
   //         <Text size="lg" className="mb-12 max-w-2xl mx-auto">
   //           {t("home.cta.description")}
   //         </Text>
-  //         <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+  //         <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
   //           <Button
   //             size="lg"
   //             className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 tfont-normal"
@@ -456,7 +456,7 @@ export default function HomePage() {
           <Text
             size="lg"
             style={
-              locale === "ar"
+              locale === "kan"
                 ? {
                     fontSize: "1.5rem",
                     lineHeight: "2.25rem",
@@ -469,7 +469,7 @@ export default function HomePage() {
             {t("home.hero.description")}
           </Text>
 
-          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+          <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
               className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal font-serif"
@@ -613,7 +613,7 @@ export default function HomePage() {
         </div>
         <AnimatedContainer animation="fade-in" delay={600}>
           <div className="text-center mt-12">
-            <Link href={locale === "ar" ? "/ar/projects" : "/projects"}>
+            <Link href={locale === "kan" ? "/kan/projects" : "/projects"}>
               <Button
                 variant="outline"
                 size="lg"
@@ -639,7 +639,7 @@ export default function HomePage() {
           <Text size="lg" className="mb-12 mx-auto max-w-2xl">
             {t("home.cta.description")}
           </Text>
-          <Link href={locale === "ar" ? "/ar/contact" : "/contact"}>
+          <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               size="lg"
               className="bg-yellow-400 text-black hover:bg-yellow-500 px-8 py-4 font-normal"

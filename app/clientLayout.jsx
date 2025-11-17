@@ -65,9 +65,9 @@ export default function ClientLayout({ children }) {
   const pathname = usePathname();
 
   // Dynamic language and direction based on pathname
-  const isArabic = pathname.startsWith("/ar");
-  const lang = isArabic ? "ar" : "en";
-  const dir = isArabic ? "rtl" : "ltr";
+  const isKannada = pathname.startsWith("/kan");
+  const lang = isKannada ? "kan" : "en";
+  const dir = isKannada ? "ltr" : "ltr";
 
   return (
     <html
@@ -76,7 +76,7 @@ export default function ClientLayout({ children }) {
       className={`${ivyOraDisplay.variable} ${haskoy.variable} antialiased`}
     >
       <head>
-        <title>Riyash - Luxury Furniture</title>
+        <title>Sthaapana - Luxury Furniture</title>
         <head>
           <link rel="icon" href="/logo.svg" />
         </head>
