@@ -204,13 +204,13 @@ export function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md h-24">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         {/* Logo */}
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 ">
           <Link href={locale === "kan" ? "/kan" : "/"}>
             <Logo />
           </Link>
