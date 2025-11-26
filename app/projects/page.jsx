@@ -85,7 +85,7 @@ export default function ProjectsPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/projects.png')] bg-cover">
-        <div className="absolute inset-0 bg-[url('/images/project.png')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/images/4.jpg')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <AnimatedContainer animation="fade-in" delay={200}>
             {/* <p className="text-[#009BDE] font-semibold text-lg mb-4">
