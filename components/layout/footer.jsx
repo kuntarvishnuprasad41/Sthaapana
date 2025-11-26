@@ -8,7 +8,7 @@ import { useTranslation } from "@/lib/i18n";
 
 const navigation = [
   { name: "about", href: "about" },
-  { name: "experience", href: "experience" },
+
   { name: "projects", href: "projects" },
   { name: "contact", href: "contact" },
 ];
@@ -61,12 +61,12 @@ export function Footer() {
             </div>
           </div>
           <div className="mt-4 flex flex-col md:flex-row md:items-center md:justify-between text-sm text-white">
-            <Link
+            {/* <Link
               href="/privacy"
               className="hover:text-gray-700 transition-colors"
             >
               {t("footer.privacy")}
-            </Link>
+            </Link> */}
             <p className="mt-2 md:mt-0">
               © Sthaapana 2025. {t("footer.rights")}
             </p>
