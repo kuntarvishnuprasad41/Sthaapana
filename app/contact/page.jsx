@@ -17,12 +17,6 @@ export default function ContactPage({ locale }) {
   const contactInfo = [
     {
       icon: MapPin,
-      title: t("contact.visit.title"),
-      description: t("contact.visit.description"),
-      details: t("contact.visit.details"),
-    },
-    {
-      icon: MapPin,
       title: t("contact.visit1.title"),
       description: t("contact.visit1.description"),
       details: t("contact.visit1.details"),
