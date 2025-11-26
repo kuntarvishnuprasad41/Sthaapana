@@ -82,7 +82,7 @@ export default function ClientLayout({ children }) {
         </head>
         <meta
           name="description"
-          content="Luxury Buildings, crafted for every lifestyle"
+          content="Build your dream with Sthaapana. Expert construction services for residential and commercial projects."
         />
         <meta name="generator" content="v0.app" />
       </head>

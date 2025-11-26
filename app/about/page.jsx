@@ -146,7 +146,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <Image
                     src="/images/2.jpg"
-                    alt="Furniture craftsmanship"
+                    alt=""
                     width={800}
                     height={600}
                     className="shadow-2xl"
@@ -189,7 +189,7 @@ export default function AboutPage() {
                 <div className="relative">
                   <Image
                     src="/images/3.png"
-                    alt="Luxury furniture showroom"
+                    alt="Luxury "
                     width={800}
                     height={600}
                     className="shadow-2xl"
