@@ -32,7 +32,7 @@ export default function HomePage() {
     },
     {
       name: t("home.rooms.categories.structural"),
-      image: "/sophisticated-dining-room-setup.png",
+      image: "/images/3.png",
     },
     {
       name: t("home.rooms.categories.interior"),
