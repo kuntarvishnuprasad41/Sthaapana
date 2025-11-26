@@ -428,14 +428,14 @@ export default function HomePage() {
       <Section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.png"
+            src="/images/1.jpg"
             alt="Hero background"
             fill
             priority
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-black/30 z-10" />
+        <div className="absolute inset-0 bg-black/70 z-10" />
         <div
           className={`relative z-20 text-center max-w-4xl mx-auto transform transition-opacity transition-transform duration-700 ${
             heroVisible

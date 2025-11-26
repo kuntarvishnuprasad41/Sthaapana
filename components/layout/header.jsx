@@ -171,7 +171,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "../ui/logo";
 import { Button } from "../ui/button";
-import { LanguageSwitcher } from "../ui/language-switcher";
+// import { LanguageSwitcher } from "../ui/language-switcher";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "../../lib/i18n";
 
@@ -250,7 +250,7 @@ export function Header() {
 
         {/* Desktop right side */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-4">
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
           {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
             <Button
               variant="outline"
@@ -319,7 +319,7 @@ export function Header() {
 
                   {/* Language switcher + button */}
                   <div className="py-6 space-y-4 pb-8">
-                    <LanguageSwitcher />
+                    {/* <LanguageSwitcher /> */}
                     {/* <Link href={locale === "kan" ? "/kan/contact" : "/contact"}>
                       <Button
                         variant="outline"
