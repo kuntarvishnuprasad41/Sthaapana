@@ -50,24 +50,24 @@ export default function HomePage() {
 
   const featuredProjects = [
     {
-      name: "Banan Hotel Suites",
-      location: "Tabuk",
-      image: "/luxury-hotel-suite.png",
+      name: "Residential Building - Plan - Proposed",
+      location: "Koppal",
+      image: "/images/7.png",
     },
     {
-      name: "Majmaah University",
-      location: "Riyadh",
-      image: "/university-modern-interior-design.png",
+      name: "Commercial Complex - Plan - Proposed",
+      location: "Bengaluru",
+      image: "/images/5.png",
     },
     {
-      name: "Anan Hotel",
-      location: "Riyadh",
-      image: "/hotel-restaurant-luxury-interior.png",
+      name: "Residential Building - Plan - Proposed",
+      location: "Koppal",
+      image: "/images/8.png",
     },
     {
-      name: "Fituri Palace Hotel",
-      location: "Riyadh",
-      image: "/palace-hotel-luxury-bedroom.png",
+      name: "Residential Building",
+      location: "",
+      image: "/images/1.jpg",
     },
   ];
 

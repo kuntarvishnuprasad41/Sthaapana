@@ -55,25 +55,13 @@ export default function AboutPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Section className="relative min-h-screen flex items-center justify-center  bg-[url('/images/about.png')] bg-cover">
-        <div className="absolute inset-0 bg-[url('/luxury-furniture-craftsmanship-workshop.png')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/images/3.png')] bg-cover bg-center opacity-30" />
         <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <AnimatedContainer animation="fade-in" delay={200}>
-            {/* <p className="text-[#009BDE] font-semibold text-lg mb-4">
-              {t("about.hero.tagline")}
-            </p> */}
-          </AnimatedContainer>
-          {/* <Heading level={1} className="mb-0">
-              {t("about.hero.heading1")}
-            </Heading>
-            <Heading level={1} gradient className="mb-0">
-              {t("about.hero.heading2")}
-            </Heading> */}
-          {/* <Text size="lg" className="mb-12 max-w-2xl mx-auto font-light">
-            {t("home.hero.description")}
-          </Text> */}
-          {/* <Text size="lg" className="max-w-3xl mx-auto">
-              {t("about.hero.description")}
-            </Text> */}
+          <AnimatedContainer
+            animation="fade-in"
+            delay={200}
+          ></AnimatedContainer>
+
           <AnimatedContainer animation="slide-up" delay={400}>
             <Heading level={1} className="mb-0 font-serif font-medium">
               {t("about.hero.heading1")}
@@ -103,7 +91,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Founder Message */}
-      <Section className="bg-black">
+      {/* <Section className="bg-black">
         <div className="flex gap-6">
           <Heading level={2} className="mb-0">
             {t("about.founder.title1")}
@@ -117,8 +105,8 @@ export default function AboutPage() {
         <div className="mx-auto">
           <Text>{t("about.founder.message")}</Text>
           {/* <Text>- {t("about.founder.signature")}</Text> */}
-        </div>
-      </Section>
+      {/* </div> *
+      </Section> */}
 
       {/* Sidebar + Content */}
       <div className="flex w-screen flex-col items-center lg:items-start lg:flex-row lg:justify-between text-black bg-[url('/bg.svg')] bg-cover bg-center">
@@ -157,7 +145,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in">
                 <div className="relative">
                   <Image
-                    src="/images/modern.png"
+                    src="/images/2.jpg"
                     alt="Furniture craftsmanship"
                     width={800}
                     height={600}
@@ -200,7 +188,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in" delay={200}>
                 <div className="relative">
                   <Image
-                    src="/images/lifestyle.png"
+                    src="/images/3.png"
                     alt="Luxury furniture showroom"
                     width={800}
                     height={600}
@@ -217,7 +205,7 @@ export default function AboutPage() {
               <AnimatedContainer animation="fade-in">
                 <div className="relative">
                   <Image
-                    src="/images/headed.png"
+                    src="/images/7.png"
                     alt="Future vision"
                     width={800}
                     height={600}

@@ -36,9 +36,9 @@
       }
     },
     "shopping": {
-      "title": "Shopping",
+      "title": "Construction",
       "subtitle": "reimagined",
-      "description": "Buying Building with Sthaapana is designed as an experience, not just a purchase. Our showrooms are curated like galleries, giving you the chance to walk through complete concepts. With personalized service, you'll see how designs come to life, helping you choose with confidence and joy."
+      "description": "Discover how Building shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
     },
     "features": {
       "visualize": {
@@ -61,8 +61,8 @@
     },
     "cta": {
       "title": "LET'S DESIGN YOUR",
-      "subtitle": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
+      "subtitle": "NEXT BUILDING TOGETHER",
+      "description": "Whether you're planning for a single home or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -82,15 +82,15 @@
     "companyInfo": {
       "story": {
         "title": "Our story",
-        "description": "Blending craftsmanship and creativity to craft timeless, meaningful Building."
+        "description": "How we build your entire dream all at one place, From Consulting to finishing of the building."
       },
       "mission": {
         "title": "Our mission",
-        "description": "Making luxury design accessible through quality, innovation, and personalized service."
+        "description": "Making developing of building accessible through quality, innovation, and personalized service."
       },
       "vision": {
         "title": "Our vision",
-        "description": "Shaping future lifestyles by setting trends, not simply following them."
+        "description": "Shaping future buildings by setting trends, not simply following them."
       }
     },
     "beginning": {
@@ -101,7 +101,7 @@
     "drives": {
       "title1": "What drives us",
       "title2": "forward",
-      "description": "We believe luxury should be within reach. Every Sthaapana piece—ready-made or custom—is built to the highest standards."
+      "description": "We believe luxury should be within reach. Every Sthaapana project is built to the highest standards."
     },
     "future": {
       "title1": "Where we're",
