@@ -22,6 +22,12 @@ export default function ContactPage({ locale }) {
       details: t("contact.visit.details"),
     },
     {
+      icon: MapPin,
+      title: t("contact.visit1.title"),
+      description: t("contact.visit1.description"),
+      details: t("contact.visit1.details"),
+    },
+    {
       icon: Phone,
       title: t("contact.call.title"),
       description: t("contact.call.description"),
@@ -101,55 +107,6 @@ export default function ContactPage({ locale }) {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Section className="relative min-h-screen flex items-center justify-center bg-[url('/images/contact-us.png')] bg-cover">
-        <div className="absolute inset-0 bg-[url('/elegant-black-leather-chairs-luxury-meeting.png')] bg-cover bg-center opacity-40" />
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <AnimatedContainer animation="fade-in" delay={200}>
-            {/* <p className="text-[#009BDE] font-normal text-lg mb-4">
-              {t("contact.hero.subtitle")}
-            </p> */}
-          </AnimatedContainer>
-          {/* <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-0">
-              {t("contact.hero.title1")}
-            </Heading>
-            <Heading level={1} gradient className="mb-0">
-              {t("contact.hero.title2")}
-            </Heading>
-          </AnimatedContainer>
-          <AnimatedContainer animation="fade-in" delay={600}>
-            <Text size="lg" className="max-w-3xl mx-auto">
-              {t("contact.hero.description")}
-            </Text>
-          </AnimatedContainer> */}
-
-          <AnimatedContainer animation="slide-up" delay={400}>
-            <Heading level={1} className="mb-0 font-serif font-medium">
-              {t("contact.hero.title1")}
-            </Heading>
-            <Heading level={1} gradient className="mb-0 font-serif font-medium">
-              {t("contact.hero.title2")}
-            </Heading>
-          </AnimatedContainer>
-          <AnimatedContainer animation="fade-in" delay={600}>
-            <Text
-              size="lg"
-              style={
-                locale === "kan"
-                  ? {
-                      fontSize: "1.5rem",
-                      lineHeight: "2.25rem",
-                      marginTop: "1rem",
-                    }
-                  : {}
-              }
-              className="mb-12 max-w-2xl mx-auto font-light"
-            >
-              {t("contact.hero.description")}
-            </Text>
-          </AnimatedContainer>
-        </div>
-      </Section>
 
       {/* Contact Form Section */}
       <Section className="bg-black">
@@ -177,7 +134,7 @@ export default function ContactPage({ locale }) {
                         </h4>
                         <p className="text-gray-400 mb-2">{info.description}</p>
                         <p className="text-[#009BDE] font-medium">
-                          {info.title !== "اتصل بنا" ? (
+                          {info.title == "اتصل xcasdsad" ? (
                             info.details
                           ) : (
                             <span

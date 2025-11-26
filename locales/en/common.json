@@ -165,8 +165,8 @@
     "showing": "Showing {{count}} of {{total}} projects{{category ? ' in ' + category : ''}}",
     "cta": {
       "heading1": "LET'S DESIGN YOUR",
-      "heading2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
+      "heading2": "NEXT PROJECT TOGETHER",
+      "description": "Whether you're planning for a single home or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -228,20 +228,30 @@
       "title2": "space together",
       "description": "Whether you're furnishing a single room, a new home, or an entire project, our team is here to guide you."
     },
+    "address": {
+      "corporate": "#146, 3 Floor, Sanjana Arcade 6th C main,4 Block, Jayanagar, Bangalore-560011",
+      "mysuru": "#2551.Opp. Renukayallamma Temple, Near Kaveri circle, Hebbala 2nd Stg. Mysuru.570017",
+      "gangavati": "Gangavathi"
+    },
     "visit": {
-      "title": "Visit Our Showrooms",
-      "description": "Experience our Building collections in person across multiple locations in the region.",
-      "details": "Mysuru, India"
+      "title": "Corporate Office",
+      "description": "#146, 3 Floor, Sanjana Arcade 6th C main,4 Block.",
+      "details": "Jayanagar, Bangalore-560011"
+    },
+    "visit1": {
+      "title": "Mysuru Branch",
+      "description": "#2551.Opp. Renukayallamma Temple, Near Kaveri circle.",
+      "details": "Hebbala 2nd Stg. Mysuru.570017"
     },
     "call": {
       "title": "Call Us",
-      "description": "Speak directly with our design consultants for personalized assistance.",
-      "details": "+PhNumber"
+      "description": "Speak directly with us for personalized assistance.",
+      "details": "+919902860683"
     },
     "email": {
       "title": "Email Us",
       "description": "Send us your inquiries and we'll respond within 24 hours.",
-      "details": "EmailId"
+      "details": "enquiry@sthaapanaconstructions.com"
     },
     "hours": {
       "title": "Business Hours",
