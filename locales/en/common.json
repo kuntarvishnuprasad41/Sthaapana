@@ -23,16 +23,16 @@
       "description": "At Sthaapana Constructions, we are committed to delivering elegant and sophisticated architectural designs paired with uncompromising quality. Our goal is to offer premium workmanship, reliable services, and exceptional value — all aligned with your brand vision, quality standards, and project timelines. With rigorous quality checks at every stage, we ensure flawless execution and complete client satisfaction you can depend on."
     },
     "rooms": {
-      "title": "Building for every room,",
+      "title": "Building for every dream,",
       "subtitle": "every story",
-      "description": "From the living room where families gather to the bedroom where dreams unfold, our collections are crafted to elevate every moment while maintaining our standards of comfort and quality.",
+      "description": "Every building, every home built with Sthaapana tells a unique story. Tell us your dream and we Design, Develop and Contract to fulfil it.",
       "categories": {
-        "livingRoom": "Living Room",
-        "bedroom": "Bedroom",
-        "dining": "Dining",
-        "office": "Office & Workspaces",
-        "kitchen": "Kitchen",
-        "hospitality": "Hospitality"
+        "consultation": "Consultation",
+        "architecture": "Architecture Floor plans",
+        "structural": "Structural design",
+        "interior": "Office & Workspaces",
+        "exterior": "Interior Design",
+        "contract": "Exterior Design"
       }
     },
     "shopping": {

@@ -23,27 +23,27 @@ export default function HomePage() {
 
   const roomCategories = [
     {
-      name: t("home.rooms.categories.livingRoom"),
-      image: "/luxury-living-room-with-modern-furniture.png",
+      name: t("home.rooms.categories.consultation"),
+      image: "/images/consultation.jpg",
     },
     {
-      name: t("home.rooms.categories.bedroom"),
+      name: t("home.rooms.categories.architecture"),
       image: "/elegant-bedroom-with-luxury-furniture.png",
     },
     {
-      name: t("home.rooms.categories.dining"),
+      name: t("home.rooms.categories.structural"),
       image: "/sophisticated-dining-room-setup.png",
     },
     {
-      name: t("home.rooms.categories.office"),
+      name: t("home.rooms.categories.interior"),
       image: "/modern-office-workspace-furniture.png",
     },
     {
-      name: t("home.rooms.categories.kitchen"),
+      name: t("home.rooms.categories.exterior"),
       image: "/luxury-kitchen-with-modern-design.png",
     },
     {
-      name: t("home.rooms.categories.hospitality"),
+      name: t("home.rooms.categories.contract"),
       image: "/hotel-lobby-luxury-furniture.png",
     },
   ];
@@ -555,7 +555,7 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-normal text-white group-hover:text-[#009BDE] transition-colors">
+                    <h3 className="text-xl font-normal text-white group-hover:text-2xl transition-colors">
                       {category.name}
                     </h3>
                   </div>
