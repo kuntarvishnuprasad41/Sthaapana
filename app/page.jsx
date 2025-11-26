@@ -36,15 +36,15 @@ export default function HomePage() {
     },
     {
       name: t("home.rooms.categories.interior"),
-      image: "/modern-office-workspace-furniture.png",
+      image: "/images/4.jpg",
     },
     {
       name: t("home.rooms.categories.exterior"),
-      image: "/luxury-kitchen-with-modern-design.png",
+      image: "/images/7.png",
     },
     {
       name: t("home.rooms.categories.contract"),
-      image: "/hotel-lobby-luxury-furniture.png",
+      image: "/images/6.jpg",
     },
   ];
 
