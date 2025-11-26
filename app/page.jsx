@@ -491,19 +491,19 @@ export default function HomePage() {
           >
             <div className="w-full px-6">
               <Heading level={2} className="mb-0 font-serif font-medium">
-                {t("home.lifestyle.title")}
+                {t("home.philosophy.title")}
               </Heading>
               <Heading
                 level={2}
                 gradient
                 className="mb-0 font-serif font-medium"
               >
-                {t("home.lifestyle.subtitle")}
+                {t("home.philosophy.subtitle")}
               </Heading>
               <br />
               <br />
               <Text className="text-gray-300 leading-relaxed">
-                {t("home.lifestyle.description")}
+                {t("home.philosophy.description")}
               </Text>
             </div>
           </AnimatedContainer>
@@ -514,11 +514,11 @@ export default function HomePage() {
           >
             <div className="h-full w-full flex justify-end">
               <Image
-                src="/images/hero2.png"
+                src="/images/2.jpg"
                 alt="Luxury living room"
                 width={800}
                 height={800}
-                className="object-cover shadow-2xl"
+                className="object-cover shadow-2xl "
               />
             </div>
           </AnimatedContainer>
@@ -532,7 +532,7 @@ export default function HomePage() {
             title={t("home.rooms.title")}
             subtitle={t("home.rooms.subtitle")}
             description={t("home.rooms.description")}
-            className="mb-16"
+            className="mb-16 "
           />
           <div
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 font-serif font-medium"
