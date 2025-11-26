@@ -182,14 +182,14 @@ export function Header() {
 
   const navigation = [
     {
+      name: "Home",
+      href: locale === "kan" ? "/kan/" : "/",
+      key: "Home",
+    },
+    {
       name: t("nav.aboutUs"),
       href: locale === "kan" ? "/kan/about" : "/about",
       key: "nav.aboutUs",
-    },
-    {
-      name: t("nav.SthaapanaExperience"),
-      href: locale === "kan" ? "/kan/experience" : "/experience",
-      key: "nav.SthaapanaExperience",
     },
     {
       name: t("nav.ourProjects"),

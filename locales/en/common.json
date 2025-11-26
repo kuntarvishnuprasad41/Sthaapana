@@ -1,7 +1,6 @@
 {
   "nav": {
     "aboutUs": "About Us",
-    "SthaapanaExperience": "Sthaapana Experience",
     "ourProjects": "Our Projects",
     "contactUs": "Contact Us"
   },
@@ -115,15 +114,15 @@
     "values": {
       "quality": {
         "title": "Quality first",
-        "description": "Every Sthaapana piece is crafted with uncompromising standards of excellence."
+        "description": "Every Sthaapana Project is crafted with uncompromising standards of excellence."
       },
       "customer": {
         "title": "Customer first",
-        "description": "We place people at the heart of every decision, designing solutions that reflect unique lifestyles."
+        "description": "We place people at the heart of every decision, designing buildings that reflect unique lifestyles."
       },
       "creativity": {
         "title": "Creativity",
-        "description": "Innovation drives us forward, embracing evolving trends and artistic craftsmanship."
+        "description": "Innovation drives us forward, embracing evolving trends and futuristic buildings."
       },
       "trust": {
         "title": "Trust",
@@ -132,8 +131,8 @@
     },
     "cta": {
       "heading1": "LET'S DESIGN YOUR",
-      "heading2": "NEXT SPACE TOGETHER",
-      "description": "Whether you're furnishing a single room or a full-scale project, Sthaapana is here to guide, create, and deliver.",
+      "heading2": "NEXT PROJECT TOGETHER",
+      "description": "Whether you're planning for a single home or a full-scale project, Sthaapana is here to guide, create, and deliver.",
       "button": "Request a Consultation"
     }
   },
@@ -141,24 +140,25 @@
     "hero": {
       "title": "View More",
       "tagline": "Projects",
-      "heading1": "Trusted to transform",
-      "heading2": "spaces across the region",
-      "description": "From luxury hotels to universities, hospitals, and iconic developments, Sthaapana delivers Building solutions that combine elegance, durability, and design excellence."
+      "heading1": "Trusted in building",
+      "heading2": "across the region",
+      "description": "From Residential to Corporate, Hospitality to Commercial spaces, Sthaapana has delivered exceptional projects that blend design, quality, and functionality."
     },
     "items": {
       "bananHotelSuits": {
-        "title": "Banan Hotel Suites",
-        "category": "Hospitality",
-        "location": "Tabuk, KSA",
+        "title": "Residential Building",
+        "category": "Residential",
+        "location": "Bengaluru",
         "description": "Furnishing 150 luxury suites with bespoke Building that blends comfort and elegance, creating a memorable guest experience."
       }
     },
     "categories": {
       "All": "All",
+      "Commercial": "Commercial",
+      "Residential": "Residential",
       "Hospitality": "Hospitality",
       "Educational": "Educational",
       "Corporate": "Corporate",
-      "Residential": "Residential",
       "Government": "Government",
       "Healthcare": "Healthcare"
     },
@@ -173,9 +173,9 @@
   "experience": {
     "hero": {
       "subtitle": "Sthaapana Experience",
-      "title1": "Shopping reimagined",
+      "title1": "Development reimagined",
       "title2": "The Sthaapana experience",
-      "description": "Discover how Building shopping transforms into an inspiring journey of creativity, confidence, and personalized design."
+      "description": "Discover how we help you develop your drem project"
     },
     "gallery": {
       "title1": "A gallery,",
